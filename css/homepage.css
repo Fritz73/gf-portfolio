@@ -10,9 +10,11 @@
     color: aliceblue;
     position: relative;
     top: calc(60px + 3vmax + 8vh);
-    left: 8%;
-    max-width: 60%;
+    left: 10%;
+    max-width: 45%;
     z-index: 1;
+    font-size: 2vmax;
+    font-weight: 500;
 }
 
 .name-title {
@@ -69,6 +71,10 @@
     width: fit-content;
 }
 
+.product-description {
+    font-weight: 600;
+}
+
 /* margin and size of the product picture*/
 .product-image-wrapper {
     margin-left: auto;
@@ -108,8 +114,9 @@
         min-width: 80%;
         margin: 20px 0 0 0;
     }
+    /*have to specifiy (specificity problem)*/
     .factory > .product-wrapper > .product-image-wrapper {
-        margin: 0;
+        margin-right: 0;
     }
     .name-title {
         font-size: 60px;
