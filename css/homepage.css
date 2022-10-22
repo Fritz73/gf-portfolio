@@ -1,0 +1,128 @@
+.cover {
+    background-color: #253551;
+    padding: 10vh 0 30vh 0;
+    flex-direction: row;
+}
+
+.description-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    position: relative;
+    top: calc(60px + 3vmax + 8vh);
+    left: 8%;
+    max-width: 60%;
+    z-index: 1;
+}
+
+.name-title {
+    color:rgb(220, 85, 101);
+    font-size: 80px;
+    margin: 20px;
+}
+
+.cover-image-wrapper {
+    background-image:url(../assets/main/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 40vmin;
+    width: 40vmin;
+    position: absolute;
+    top: 15vh;
+    right: 10vw;
+    z-index: 0;
+    opacity: .6;
+}
+
+.pet, .factory, .asphalt {
+    padding: 0 10%;
+    margin: 50px 0;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.factory > .product-wrapper {
+    flex-direction: row-reverse;
+}
+
+.title-wrapper {
+    display: flex;
+    width: fit-content;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    place-content: center;
+}
+
+.product-text > .title-wrapper > h2 {
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #253551;
+    color:#253551;
+    width: fit-content;
+}
+
+/* margin and size of the product picture*/
+.product-image-wrapper {
+    margin-left: auto;
+    max-width: 45%;
+}
+
+.factory > .product-wrapper > .product-image-wrapper {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.product-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/*---------------------------------------*/
+
+
+@media (max-width: 700px) {
+    .product-wrapper {
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+    }
+    .factory > .product-wrapper {
+        flex-direction: column;
+    }
+    .pet, .factory, .asphalt {
+        padding: 0;
+    }
+    .product-text {
+        max-width: 80%;
+    }
+    .product-image-wrapper {
+        min-width: 80%;
+        margin: 20px 0 0 0;
+    }
+    .factory > .product-wrapper > .product-image-wrapper {
+        margin: 0;
+    }
+    .name-title {
+        font-size: 60px;
+        margin: 15px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .name-title {
+        margin: 10px 0;
+    }
+    .cover-image-wrapper {
+        display: none;
+    }
+}

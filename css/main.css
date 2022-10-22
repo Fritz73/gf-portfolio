@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vmax;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .85);
+    margin: 0;
+    place-items: center;
+    height: calc(60px + 3vmax);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+
+.logo {
+    display: inline-block;
+    width: calc(30px + 3vmax);
+    height: calc(30px + 3vmax);
+    margin-left: 5%;
+}
+
+.cover {
+    display: flex;
+    max-height: 70vh;
+    z-index: -9;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav-item-wrapper {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-item-wrapper {
+        flex-direction: column;
+    }
+    .nav-item {
+        padding-bottom: 5px;
+    }
+}
+
+.nav-item {
+    display: flex;
+    width: 7em;
+    place-content: center;
+    color:aliceblue;
+}
+/*above styles nav bar*/
+
+
+/*below styles footer*/
+
+footer {
+    background-color: black;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.contact-me {
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 50px 10% 0 10%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-content {
+    display: flex;
+    margin-left: auto;
+    margin-top: 25px;
+    padding: 0 10%;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    footer{
+        flex-direction: column;
+    }
+    .footer-content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+.footer-column {
+    padding-right: 30px;
+}
+
+.footer-column > h3,
+.footer-column > .all-cap {
+    text-transform: uppercase;
+}
+
+h2,
+.footer-column > a {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact-me > a,
+.footer-column > a {
+    display: block;
+    color: aliceblue;
+    padding: 5px 0;
+}
