@@ -75,7 +75,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin: 50px 10% 0 10%;
+    margin: 20px 10% 0 10%;
 }
 
 .footer-content {
@@ -87,7 +87,7 @@ footer {
     flex-direction: row;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
     footer{
         flex-direction: column;
     }
@@ -125,6 +125,10 @@ a {
     display: block;
     color: aliceblue;
     padding: 5px 0;
+}
+
+footer {
+    font-weight: 600;
 }
 
 @media (min-width: 1000px) {
