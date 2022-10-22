@@ -18,7 +18,7 @@
 .name-title {
     color:rgb(220, 85, 101);
     font-size: 80px;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .cover-image-wrapper {
@@ -113,7 +113,7 @@
     }
     .name-title {
         font-size: 60px;
-        margin: 15px;
+        margin: 15px 0;
     }
 }
 
