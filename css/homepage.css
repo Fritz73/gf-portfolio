@@ -1,6 +1,5 @@
 .cover {
     background-color: #253551;
-    padding: 10vh 0 30vh 0;
     flex-direction: row;
 }
 
@@ -12,6 +11,7 @@
     top: calc(60px + 3vmax + 8vh);
     left: 10%;
     max-width: 45%;
+    height: fit-content;
     z-index: 1;
     font-size: 2vmax;
     font-weight: 500;
@@ -44,23 +44,32 @@
 
 .product-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
 .factory > .product-wrapper {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .title-wrapper {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     width: fit-content;
+}
+
+
+.title-decoration {
+    font-size: 1.85em;
+    margin: 30px;
+    transform: scale(1,1.24);
 }
 
 
 .product-text {
     display: flex;
     flex-direction: column;
-    max-width: 45%;
+    max-width: 50%;
     place-content: center;
 }
 
@@ -87,19 +96,13 @@
 
 /* margin and size of the product picture*/
 .product-image-wrapper {
-    margin-left: auto;
+    margin-right: auto;
     max-width: 45%;
 }
 
 .factory > .product-wrapper > .product-image-wrapper {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.product-image {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 /*---------------------------------------*/
