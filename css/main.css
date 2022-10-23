@@ -59,6 +59,14 @@ img {
     place-content: center;
     color:aliceblue;
 }
+
+.nav-item-wrapper > a {
+    transition: all .3s ease-out;
+}
+
+.nav-item-wrapper > a:hover {
+    color: rgb(141, 176, 251);
+}
 /*above styles nav bar*/
 
 
@@ -125,6 +133,12 @@ a {
     display: block;
     color: aliceblue;
     padding: 5px 0;
+    transition: all .3s ease-out;
+}
+
+.contact-me > a:hover,
+.footer-column > a:hover {
+    color: rgb(155, 155, 155);
 }
 
 footer {
