@@ -56,13 +56,18 @@
     flex-direction: row;
     align-items: center;
     width: fit-content;
+    position: relative;
 }
 
 
 .title-decoration {
     font-size: 1.85em;
-    margin: 30px;
+    margin: 1.5vw;
     transform: scale(1,1.24);
+}
+
+.star-align {
+    right: calc(1.5em + 1.5vw);
 }
 
 
