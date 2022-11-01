@@ -24,3 +24,63 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+
+.section-content {
+    width: 100%;
+}
+
+
+.hard-skills > .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.soft-skills > .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hard-skills > .section-content > span,
+.soft-skills > .section-content > span
+{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .hard-skills > .section-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .soft-skills > .section-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .hard-skills > .section-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.work > .section-content {
+    display: flex;
+}
+
+.entry {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    justify-content: left;
+}
+
+.right {
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+}
