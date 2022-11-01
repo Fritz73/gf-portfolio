@@ -5,8 +5,12 @@
     background-image: url(../assets/pet/cover.png);
 }
 
+h3 {
+    font-weight: 600;
+}
+
 section {
-    padding: 0 10%;
+    padding: 0 20%;
 }
 
 .mask {
@@ -17,32 +21,246 @@ section {
     z-index: 0;
     width: 100%;
     background-color: black;
-    opacity: .65;
+    opacity: .75;
 }
 
 .description-wrapper {
     z-index: 1;
-    width: 500px;
-    max-width: 80vh;
+    width: 38vw;
     color: aliceblue;
+    position: relative;
+    right: 10vw;
 }
 
 .name-title {
-    color: yellow;
+    color: #F6C848;
 }
 
+.concept-statement {
+    display: flex;
+    margin-top: 60px;
+}
 
+.concept-statement > .image-wrapper {
+    max-width: 60%;
+    background-image: url(../assets/pet/b1.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+    grid-template-areas: ". img1 img2 img3 img4 .";
+    gap: 30px;
+}
+.concept-statement > .image-wrapper > img {
+    position: relative;
+}
 
+.problem-statement {
+    margin-top: 100px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "para1 para1 para2 para2"
+    "shmap para3 para3 para3";
+}
+
+.problem-statement > p {
+    display: flex;
+    justify-content: center;
+}
+.survey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .survey-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 250px;
     padding-bottom: 100px;
     gap: 5px;
 }
+
 
 figcaption {
     display: flex;
     justify-content: center;
     font-size: 1vmax;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-screenshots {
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10vw;
+    grid-template-areas:
+    "p1 p2 p3"
+    "t1 t2 t3"
+    "t1 t4 t4"
+}
+
+/* formatting pic with pointers*/
+.explore-page {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: repeat(10, 50px);
+}
+.explore-page > img {
+    grid-column: 2;
+    grid-row: 1 / 11;
+}
+.explore-page > .intro {
+    grid-column: 1;
+    grid-row: 2 / 4;
+}
+.explore-page > .p1 {
+    grid-column: 1;
+    grid-row: 5;
+}
+.explore-page > .p2 {
+    grid-column: 1;
+    grid-row: 7;
+}
+.explore-page > .p3 {
+    grid-column: 1;
+    grid-row: 9;
+}
+
+.explore-page > .solved {
+    grid-column: 3;
+    grid-row: 1;
+}
+.explore-page > .solved > p {
+    margin: 5px;
+}
+.explore-page > .p4 {
+    grid-column: 3;
+    grid-row: 4;
+}
+.explore-page > .p5 {
+    grid-column: 3;
+    grid-row: 6;
+}
+.explore-page > .p6 {
+    grid-column: 3;
+    grid-row: 8;
+}
+
+.pointer {
+    display: flex;
+    font-size: 1vmax;
+}
+.solved{
+    font-size: 1vmax;
+}
+
+.pointer > p {
+    margin: 0 5px;
+}
+
+
+.personal-page {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(10, 50px);
+}
+
+.personal-page > img {
+    grid-column: 2;
+    grid-row: 1 / 11;
+}
+
+.personal-page > .intro {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.personal-page > .p1 {
+    grid-column: 3;
+    grid-row: 3;
+}
+.personal-page > .p2 {
+    grid-column: 3;
+    grid-row: 5;
+}
+.personal-page > .p3 {
+    grid-column: 3;
+    grid-row: 8;
+}
+.personal-page > .solved {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.message-page {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(10, 50px);
+}
+.message-page > img {
+    grid-column: 1;
+    grid-row: 1 / 11;
+}
+.message-page > .intro {
+    grid-column: 2;
+    grid-row: 2;
+}
+.message-page > .p1 {
+    grid-column: 2;
+    grid-row: 5;
+}
+.message-page > .solved {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.life-page {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    height: 500px;
+    column-gap: 30px;
+    grid-template-areas:
+    "intro sc1 sc2"
+    "solved sc1 sc2"
+    "solved sc1 sc2";
+}
+
+.next-step {
+    margin-top: 260px;
+}
+
+.next-step > .table {
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+}
+
+.next-step > .table > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 1200px) {
+    section {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .survey-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
 }
