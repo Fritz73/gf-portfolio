@@ -1,0 +1,48 @@
+.cover {
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(../assets/pet/cover.png);
+}
+
+section {
+    padding: 0 10%;
+}
+
+.mask {
+    position: absolute;
+    top:0;
+    height: 800px;
+    max-height: 70vh;
+    z-index: 0;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+}
+
+.description-wrapper {
+    z-index: 1;
+    width: 500px;
+    max-width: 80vh;
+    color: aliceblue;
+}
+
+.name-title {
+    color: yellow;
+}
+
+
+
+.survey-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    padding-bottom: 100px;
+    gap: 5px;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    font-size: 1vmax;
+}
