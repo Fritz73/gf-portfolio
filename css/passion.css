@@ -1,0 +1,62 @@
+.cover {
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/passion/cover.png);
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro > img {
+    max-width: 40%;
+    border-radius: 10%;
+}
+
+.paintings, .DIYs, .travel, .calligraphy, .intro {
+    margin: 80px 20%;
+}
+
+.calligraphy > .container {
+    height: 400px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.DIYs {
+    height: 800px;
+    position: relative;
+}
+
+.DIYs > img {
+    position: absolute;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.paintings > .container1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "p1 p2 p3 p4"
+    "p1 p5 p6 p7";
+}
+
+.paintings > .container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.travel > .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}

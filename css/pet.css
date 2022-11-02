@@ -3,6 +3,7 @@
     justify-content: center;
     background-size: cover;
     background-image: url(../assets/pet/cover.png);
+    background-position: center;
 }
 
 h3 {
