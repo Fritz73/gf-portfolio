@@ -19,9 +19,6 @@
     border-radius: 10%;
 }
 
-.paintings, .DIYs, .travel, .calligraphy, .intro {
-    margin: 80px 20%;
-}
 
 .calligraphy > .container {
     height: 400px;

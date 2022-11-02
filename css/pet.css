@@ -10,10 +10,6 @@ h3 {
     font-weight: 600;
 }
 
-section {
-    padding: 0 20%;
-}
-
 .mask {
     position: absolute;
     top:0;
@@ -85,7 +81,6 @@ section {
 figcaption {
     display: flex;
     justify-content: center;
-    font-size: 1vmax;
 }
 
 .features {
@@ -99,7 +94,7 @@ figcaption {
     display: grid;
     grid-template-rows: 2fr 0.5fr 0.5fr;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10vw;
+    column-gap: 8vw;
     grid-template-areas:
     "p1 p2 p3"
     "t1 t2 t3"
@@ -156,10 +151,6 @@ figcaption {
 
 .pointer {
     display: flex;
-    font-size: 1vmax;
-}
-.solved{
-    font-size: 1vmax;
 }
 
 .pointer > p {
@@ -253,12 +244,6 @@ figcaption {
 }
 
 
-
-@media (max-width: 1200px) {
-    section {
-        padding: 0 10%;
-    }
-}
 
 @media (max-width: 800px) {
     .survey-wrapper {
