@@ -1,0 +1,99 @@
+.cover {
+    background-image: url(../assets/asphalt/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-wrapper {
+    max-width: 70%;
+    z-index: 1;
+    color: aliceblue;
+}
+
+.mask {
+    position: absolute;
+    top:0;
+    height: 800px;
+    max-height: 70vh;
+    z-index: 0;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+}
+
+
+.intro {
+    display: flex;
+}
+.intro > img {
+    max-width: 30%;
+}
+
+.early-stage > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.early-stage > .container > img,
+.early-stage > .container > div {
+    position: relative;
+}
+
+.next-step > .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.next-step > .container > img {
+    position: relative;
+}
+
+.overview {
+    display: flex;
+}
+.overview > img {
+    max-width: 40%;
+}
+
+.homepage,
+.menu {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 50px);
+}
+
+.homepage > img,
+.menu > img {
+    grid-column: 1;
+    grid-row: 1 / 11;
+}
+
+.homepage > .pointer,
+.homepage > h3,
+.menu > .pointer,
+.menu > h3 {
+    grid-column: 2;
+    display: flex;
+    justify-content: left;
+}
+.pointer > .dash {
+    margin-right: 20px;
+}
+
+
+.sign-up,
+.output {
+    display: flex;
+    margin-top: 100px;
+}
+
+.sign-up > .container
+.output > .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 48%;
+}
+
