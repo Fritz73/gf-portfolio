@@ -49,7 +49,7 @@ nav {
 
 img {
     width: 100%;
-    /*height: 100%;*/
+    height: 100%;
     object-fit: contain;
 }
 
@@ -160,19 +160,19 @@ footer {
 
 @media (max-width: 1800px) {
     section {
-        margin: 0 15%;
+        margin: 80px 15%;
     }
 }
 
 @media (max-width: 1600px) {
     section {
-        margin: 0 10%;
+        margin: 80px 10%;
     }
 }
 
 @media (max-width: 1400px) {
     section {
-        margin: 0 5%;
+        margin: 80px 5%;
     }
 }
 

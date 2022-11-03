@@ -1,0 +1,218 @@
+.cover {
+    background-image: url(../assets/asphalt/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-wrapper {
+    max-width: 70%;
+    z-index: 1;
+    color: aliceblue;
+}
+
+.mask {
+    position: absolute;
+    top:0;
+    height: 800px;
+    max-height: 70vh;
+    z-index: 0;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+}
+
+
+
+.intro {
+    display: flex;
+}
+.intro > img {
+    max-width: 30%;
+}
+.intro > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-user > .image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.empathy-map {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+    grid-template-areas:
+    "e1 e1 e2 e2 e3 e3"
+    ".  e4 e4 e5 e5  .";
+}
+
+.empathy-map > figure {
+    margin: 0;
+}
+
+.empathy-map > figure > img {
+    height: auto;
+}
+
+.storyboard {
+    display: flex;
+    position: relative;
+}
+
+.storyboard > img {
+    max-width: 45%;
+    opacity: .8;
+}
+
+.storyboard > .text-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.storyboard > .text-wrapper > p {
+    text-align: center;
+}
+
+.wireframe {
+    display: flex;
+}
+
+.wireframe > .container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 60%;
+    grid-gap: 20px;
+    grid-template-areas:
+    "s1 s2 s3 s4"
+    "s5 s6 s7  ."
+    "s8 s9  .  ."
+    "s0 t1 t1  .";
+}
+
+.wireframe > .container2 {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wireframe > .container2 > .gray-rr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    background-color: #eee;
+    border-radius: 5%;
+    height: 40%;
+}
+
+.wireframe > .container2 > .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.overview > .text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fig-n-text > .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fig-n-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.fig-n-text > figure {
+    width: 48%;
+}
+
+.fig-n-text > .text-wrapper {
+    width: 45%;
+}
+
+.fig-n-text > .text-wrapper > p {
+    margin: 10px 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.homepage > figure,
+.contact > figure,
+.worker > figure {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.manager > figure,
+.order > figure,
+.shopping > figure {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.role-switch {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.log-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.log-in > .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.history-version {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.history-version > .image-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    height: 300px;
+}
+
+.gray-circle {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    left: calc(50% - 10vw);
+    top: 30px;
+    background-color: #253551;
+    opacity: 50%;
+    border-radius: 50%;
+    z-index: -1;
+}
