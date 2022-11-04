@@ -223,6 +223,7 @@ figcaption {
 }
 .prev-next > a {
     text-transform: uppercase;
+    color: #000;
 }
 .prev-next > a:hover {
     color: rgba(37, 53, 81, .7);
