@@ -90,6 +90,7 @@
 
 .wireframe {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .wireframe > .container1 {
@@ -104,6 +105,10 @@
     "s0 t1 t1  .";
 }
 
+.wireframe > .container1 > img {
+    height: auto;
+}
+
 .wireframe > .container2 {
     display: flex;
     width: 40%;
@@ -114,10 +119,14 @@
 .wireframe > .container2 > .gray-rr {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
     background-color: #eee;
     border-radius: 5%;
-    height: 40%;
+    height: auto;
+}
+
+.wireframe > .container2 > .gray-rr > img {
+    height: auto;
 }
 
 .wireframe > .container2 > .text-wrapper {
