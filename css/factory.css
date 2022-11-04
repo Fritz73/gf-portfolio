@@ -216,3 +216,14 @@ figcaption {
     border-radius: 50%;
     z-index: -1;
 }
+
+.prev-next {
+    display: flex;
+    margin-top: 100px;
+}
+.prev-next > a {
+    text-transform: uppercase;
+}
+.prev-next > a:hover {
+    color: rgba(37, 53, 81, .7);
+}

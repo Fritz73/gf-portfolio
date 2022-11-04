@@ -238,6 +238,10 @@ figcaption {
 
 .next-step {
     margin-top: 260px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 80px;
 }
 
 .next-step > .table {
@@ -252,7 +256,24 @@ figcaption {
     flex-direction: column;
 }
 
+.orange-circle {
+    position: absolute;
+    height: 32vw;
+    width: 32vw;
+    border-radius:50%;
+    bottom: -16vw;
+    left: 0;
+    background-color: #F6C848;
+}
 
+.orange-circle > a {
+    position: absolute; bottom: 18vw; right: 5vw;
+    text-transform: uppercase;
+}
+
+.orange-circle > a:hover {
+    color: rgba(37, 53, 81, .7);
+}
 
 @media (max-width: 800px) {
     .survey-wrapper {

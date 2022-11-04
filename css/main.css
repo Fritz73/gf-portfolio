@@ -10,6 +10,11 @@ section {
     margin: 80px 20%;
 }
 
+footer {
+    position: relative;
+    z-index: 9;
+}
+
 h2 {
     font-size: 1.4em;
 }

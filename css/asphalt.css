@@ -90,7 +90,7 @@
     margin-top: 100px;
 }
 
-.sign-up > .container
+.sign-up > .container,
 .output > .container {
     display: flex;
     flex-direction: column;
