@@ -64,6 +64,7 @@
 .storyboard {
     display: flex;
     position: relative;
+    margin-top: 100px;
 }
 
 .storyboard > img {
@@ -91,6 +92,7 @@
 .wireframe {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .wireframe > .container1 {
@@ -191,6 +193,7 @@ figcaption {
 }
 
 .log-in {
+    margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
