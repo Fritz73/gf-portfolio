@@ -267,6 +267,7 @@ figcaption {
     position: absolute; bottom: 18vw; right: 5vw;
     text-transform: uppercase;
     color: #000;
+    z-index: 2;
 }
 
 .orange-circle > a:hover {

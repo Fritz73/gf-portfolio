@@ -133,3 +133,17 @@
     width: 60%;
 }
 
+.prev-next {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.prev-next > a {
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 10px;
+}
+.prev-next > a:hover {
+    color: rgba(37, 53, 81, .7);
+}
+
