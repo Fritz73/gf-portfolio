@@ -3,11 +3,10 @@
     background-size: cover;
     background-position: center;
     align-items: center;
-    justify-content: center;
 }
 
 .description-wrapper {
-    max-width: 70%;
+    max-width: 60%;
     z-index: 1;
     color: aliceblue;
 }

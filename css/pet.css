@@ -1,6 +1,5 @@
 .cover {
     align-items: center;
-    justify-content: center;
     background-size: cover;
     background-image: url(../assets/pet/cover.png);
     background-position: center;
@@ -23,10 +22,8 @@ h3 {
 
 .description-wrapper {
     z-index: 1;
-    width: 38vw;
     color: aliceblue;
-    position: relative;
-    right: 10vw;
+    max-width: 60%;
 }
 
 .name-title {
