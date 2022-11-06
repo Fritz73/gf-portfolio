@@ -1,15 +1,14 @@
 .cover {
     background-color: #253551;
     flex-direction: row;
+    align-items: center;
 }
 
 .description-wrapper {
     display: flex;
     flex-direction: column;
     color: aliceblue;
-    position: relative;
     top: calc(60px + 3vmax + 8vh);
-    left: 10%;
     max-width: 45%;
     height: fit-content;
     z-index: 1;
@@ -32,7 +31,6 @@
     top: 15vh;
     right: 10vw;
     z-index: 0;
-    opacity: .6;
 }
 
 .product-wrapper {
