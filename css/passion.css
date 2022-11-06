@@ -15,7 +15,7 @@
 }
 
 .intro > img {
-    max-width: 40%;
+    max-width: 25%;
     border-radius: 10%;
 }
 
@@ -27,14 +27,26 @@
 }
 
 .DIYs {
-    height: 800px;
+    margin-top: 100px;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-areas:
+    "h00 h00 h00   .   . d14   .   .   .   .   ."
+    "  .   .   .   . d16 d18 d18   .   .   .   ."
+    "  .   .   . d13 d11 d11 d15 d10   .   .   ."
+    "  . d12 d03 d03 d03 d06 d07 d07 d04 d04   ."
+    "d08 d05 d17 d17 d01 d01 d02 d19 d19 d09 d09";
 }
 
 .DIYs > img {
-    position: absolute;
-    max-width: 200px;
-    max-height: 200px;
+    position: static;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.paintings {
+    margin-top: 100px;
 }
 
 .paintings > .container1 {
@@ -47,11 +59,15 @@
 }
 
 .paintings > .container2 {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
 }
 
+.travel {
+    margin-top: 100px;
+}
 .travel > .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
