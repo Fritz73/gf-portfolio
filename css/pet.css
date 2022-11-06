@@ -276,6 +276,13 @@ figcaption {
     color: rgba(37, 53, 81, .7);
 }
 
+.orange-circle > img {
+    width: 40%;
+    position: absolute;
+    top: -18%;
+    left: 18%;
+}
+
 @media (max-width: 800px) {
     .survey-wrapper {
         grid-template-columns: 1fr 1fr;
