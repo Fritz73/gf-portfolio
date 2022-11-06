@@ -43,7 +43,7 @@ h1 > span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .learn-user > .image-wrapper {
@@ -60,10 +60,15 @@ h1 > span {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 30px;
     grid-template-areas:
+    "h2 h2 h2 h2 h2 h2"
     "e1 e1 e2 e2 e3 e3"
     ".  e4 e4 e5 e5  .";
 }
 
+.empathy-map > h2 {
+    grid-area: h2;
+    font-weight: normal;
+}
 .empathy-map > figure {
     margin: 0;
 }
