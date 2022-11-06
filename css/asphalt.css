@@ -7,9 +7,13 @@
 }
 
 .description-wrapper {
-    max-width: 70%;
+    max-width: 60%;
     z-index: 1;
     color: aliceblue;
+}
+
+.description {
+    font-size: 30px;
 }
 
 .mask {
@@ -20,7 +24,7 @@
     z-index: 0;
     width: 100%;
     background-color: black;
-    opacity: .3;
+    opacity: .5;
 }
 
 
@@ -29,6 +33,13 @@
 }
 .intro > img {
     max-width: 30%;
+}
+.intro > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 100px;
 }
 
 .early-stage > .container {
@@ -39,6 +50,16 @@
 .early-stage > .container > img,
 .early-stage > .container > div {
     position: relative;
+}
+
+.early-stage > .container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.next-step {
+    margin-top: 100px;
 }
 
 .next-step > .container {
@@ -54,15 +75,23 @@
     display: flex;
 }
 .overview > img {
-    max-width: 40%;
+    max-width: 30%;
+}
+
+.overview > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 30px;
 }
 
 .homepage,
 .menu {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 2fr;
     grid-template-rows: repeat(10, 50px);
+    column-gap: 30px;
 }
 
 .homepage > img,
@@ -95,5 +124,13 @@
     display: flex;
     flex-direction: column;
     max-width: 48%;
+}
+
+.conclusion {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+    width: 60%;
 }
 
