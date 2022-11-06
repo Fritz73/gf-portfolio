@@ -43,6 +43,9 @@
     grid-template-columns: repeat(5, 1fr);
 }
 
+.learn-user > .image-wrapper > img {
+}
+
 .empathy-map {
     margin-top: 100px;
     display: grid;
@@ -92,7 +95,10 @@
 .wireframe {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+    padding-top: 80px;
+    background-image: url(../assets/factory/wb.png);
+    background-size: cover;
+    background-position: top;
 }
 
 .wireframe > .container1 {
