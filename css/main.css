@@ -163,6 +163,7 @@ h2,
 
 a {
     text-decoration: none;
+    transition: all .3s ease-out;
 }
 
 .contact-me > a,
@@ -170,16 +171,30 @@ a {
     display: block;
     color: aliceblue;
     padding: 5px 0;
-    transition: all .3s ease-out;
 }
 
-.contact-me > a:hover,
-.footer-column > a:hover {
+a:hover {
     color: rgb(155, 155, 155);
 }
 
 footer {
     font-weight: 600;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 30px 0 30px 0;
+}
+
+.download > a {
+    color: aliceblue;
+}
+
+.download > a:hover {
+    opacity: .8;
 }
 
 @media (max-width: 1800px) {
