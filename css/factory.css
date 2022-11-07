@@ -235,7 +235,15 @@ figcaption {
 .history-version > .image-wrapper {
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
     height: 300px;
+    max-width: 100%;
+}
+
+.history-version > .image-wrapper > img {
+    height: 100%;
+    width: auto;
+    border: 1px solid black;
 }
 
 .gray-circle {
