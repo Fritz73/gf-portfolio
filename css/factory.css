@@ -156,11 +156,15 @@ h1 > span {
     align-items: end;
 }
 
+.final-design {
+    margin-top: 150px;
+}
+
 .overview > .text {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .fig-n-text > .text-wrapper {
