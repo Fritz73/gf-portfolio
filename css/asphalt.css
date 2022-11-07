@@ -140,3 +140,36 @@
     color: rgba(37, 53, 81, .7);
 }
 
+main {
+    position: relative;
+}
+
+.gray-circle {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.circle1 {
+    background-color: #ddd;
+    height: 10vw;
+    width: 10vw;
+    left: 40vw;
+    bottom: 8vw;
+}
+
+.circle2 {
+    background-color: #eee;
+    height: 15vw;
+    width: 15vw;
+    left: 10vw;
+    bottom: -7vw;
+}
+
+.circle3 {
+    background-color: #ededed;
+    height: 25vw;
+    width: 25vw;
+    left: 70vw;
+    bottom: 0;
+}
