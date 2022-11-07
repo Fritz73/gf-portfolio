@@ -16,13 +16,6 @@
 }
 
 .mask {
-    position: absolute;
-    top:0;
-    height: 800px;
-    max-height: 70vh;
-    z-index: 0;
-    width: 100%;
-    background-color: black;
     opacity: .5;
 }
 

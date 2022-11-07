@@ -3,8 +3,8 @@
     justify-content: center;
     background-image: url(../assets/passion/cover.png);
     background-color: black;
-    background-size: contain;
-    background-position: center;
+    background-size: 100%;
+    background-position: 0 35%;
     background-repeat: no-repeat;
 }
 
