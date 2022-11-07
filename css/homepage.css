@@ -101,6 +101,26 @@
     margin-left: auto;
 }
 
+main {
+    position: relative;
+    overflow:hidden;
+}
+
+.gray-circle {
+    height: 40vw;
+    width: 40vw;
+    max-height: 700px;
+    max-width: 700px;
+    border-radius: 50%;
+    background-color: #aaaaaa;
+
+    position: absolute;
+    bottom: -22vw;
+    left: 3vw;
+
+    z-index: -1;
+}
+
 /*---------------------------------------*/
 
 
