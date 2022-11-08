@@ -63,6 +63,11 @@
     position: relative;
 }
 
+.final-design {
+    padding-top: 60px;
+    border-top: 1px solid #ddd;
+}
+
 .overview {
     display: flex;
 }
@@ -79,7 +84,7 @@
 
 .homepage,
 .menu {
-    margin-top: 100px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: repeat(10, 50px);
