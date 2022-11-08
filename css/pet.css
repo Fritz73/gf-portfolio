@@ -260,16 +260,16 @@ figcaption {
     background-color: #F6C848;
 }
 
-.orange-circle > a {
-    position: absolute; bottom: 18vw; right: 5vw;
+.next {
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
     text-transform: uppercase;
     color: #000;
     z-index: 2;
+    margin-top: 120px;
 }
 
-.orange-circle > a:hover {
-    color: rgba(37, 53, 81, .7);
-}
 
 .orange-circle > img {
     width: 40%;
