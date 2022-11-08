@@ -53,13 +53,14 @@ nav {
     height: 80vh;
     z-index: -9;
     margin: 0;
+    overflow: hidden;
+    position: relative;
 }
 
 .cover > .mask {
     position: absolute;
     top:0;
-    height: 800px;
-    max-height: 80vh;
+    height: 100%;
     z-index: 0;
     width: 100%;
     background-color: black;

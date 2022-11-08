@@ -23,6 +23,10 @@ h3 {
     color: #F6C848;
 }
 
+.concept {
+    overflow: hidden;
+}
+
 .concept-statement {
     display: flex;
     margin-top: 60px;
