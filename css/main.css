@@ -50,8 +50,7 @@ nav {
 
 .cover {
     display: flex;
-    height: 800px;
-    max-height: 80vh;
+    height: 80vh;
     z-index: -9;
     margin: 0;
 }
