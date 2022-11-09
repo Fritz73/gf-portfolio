@@ -266,7 +266,8 @@ figcaption {
 
 .next {
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    width: fit-content;
     margin-left: auto;
     text-transform: uppercase;
     color: #000;

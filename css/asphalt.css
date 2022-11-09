@@ -133,16 +133,20 @@
 .prev-next {
     display: flex;
     flex-direction: column;
+    align-items: end;
+    width: fit-content;
     margin-top: 100px;
 }
 .prev-next > a {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
     text-transform: uppercase;
     color: #000;
     margin-top: 10px;
 }
-.prev-next > a:hover {
-    color: rgba(37, 53, 81, .7);
-}
+
 
 main {
     position: relative;
