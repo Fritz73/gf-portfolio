@@ -10,6 +10,10 @@ h3 {
     font-size: 1.2em;
 }
 
+.dash {
+    opacity: .3;
+}
+
 .mask {
     opacity: .75;
 }
@@ -90,7 +94,7 @@ figcaption {
 .features {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 
 .features {
@@ -101,12 +105,28 @@ figcaption {
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
+    column-gap: 10px;
     grid-template-areas:
     "h3 h3 h3 h3 h3"
     "p1 t1 p2 t2 p3"
-    "p1 t1 p2 t3 p3"
+    "p1 t1 p2 t2 p3"
     "t4 t4 t4 t4 t4"
+}
+
+.three-screenshots > div {
+    display: flex;
+    position: relative;
+    top: 12%;
+}
+
+.three-screenshots > div > p {
+    position: absolute;
+    left: -3em;
+}
+.three-screenshots > div > div > p {
+    margin: 5px 0;
+    position: relative;
+    top: 15px;
 }
 
 .three-screenshots > .problem-solution {
