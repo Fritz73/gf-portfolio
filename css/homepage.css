@@ -32,18 +32,18 @@ nav > a {
 .description-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
     color: aliceblue;
-    top: calc(60px + 3vmax + 8vh);
     max-width: 45%;
     height: fit-content;
     z-index: 1;
     font-weight: 500;
-    animation: appear 2s ease-out 3.5s;
+    animation: appear 2s ease-out .5s;
     animation-fill-mode: both;
 }
 
 nav {
-    animation: appear 2s ease-out 3.5s;
+    animation: appear 2s ease-out .5s;
     animation-fill-mode: both;
 }
 
@@ -52,25 +52,6 @@ nav {
     margin: 20px 0;
 }
 
-@keyframes moon-rise {
-    0% {
-        bottom: -90vmin;
-        right: calc(50vw - 20vmin);
-        opacity: 0;
-        scale: 3;
-    }
-    80% {
-        bottom: 18vh;
-        right: calc(50vw - 20vmin);
-        opacity: .8;
-        scale: 1;
-    }
-    100% {
-        right: 10vw;
-        bottom: 18vh;
-        opacity: 1;
-    }
-}
 
 .cover-image-wrapper {
     background-image:url(../assets/main/logo.png);
@@ -80,10 +61,34 @@ nav {
     height: 40vmin;
     width: 40vmin;
     position: absolute;
+    right: 10vw;
+    bottom: 18vh;
     z-index: 0;
-    animation: moon-rise 4s ease-in-out;
+    animation: appear 4s ease-in-out;
     animation-fill-mode: both;
 }
+
+.spacer {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/wave.svg");
+}
+
+.spacer-bottom {
+    aspect-ratio: 960/50;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/wave2.svg");
+}
+
 
 .product-wrapper {
     display: flex;

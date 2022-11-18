@@ -41,12 +41,24 @@ let viewportWidth = getViewport()[0];
 let viewportHeight = getViewport()[1];
 let appearOnLoad = document.querySelectorAll('section:not(.cover) > div, section:not(.cover) > h2');
 
-for (let i = 0; i < appearOnLoad.length; i++) {
-    let target = appearOnLoad[i];
-    document.addEventListener('scroll', () => {
-        if (target.getBoundingClientRect().top < viewportHeight * 0.8) {
-            target.style.opacity = '1';
-            target.style.top = '0';
+// for (let i = 0; i < appearOnLoad.length; i++) {
+//     let target = appearOnLoad[i];
+//     document.addEventListener('scroll', () => {
+//         if (target.getBoundingClientRect().top < viewportHeight * 0.8) {
+//             target.style.opacity = '1';
+//             target.style.top = '0';
+//         }
+//     });
+// }
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.top = '0';
         }
     });
-}
+});
+
+appearOnLoad.forEach((el) => observer.observe(el));
