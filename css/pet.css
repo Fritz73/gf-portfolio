@@ -113,7 +113,8 @@ figcaption {
     "h3 h3 h3 h3 h3"
     "p1 t1 p2 t2 p3"
     "p1 t1 p2 t3 p3"
-    "t4 t4 t4 t4 t4"
+    "t4 t4 t4 t4 t4";
+    margin-bottom: 30px;
 }
 
 .three-screenshots > div {
@@ -202,7 +203,7 @@ figcaption {
 
 
 .personal-page {
-    margin-top: 100px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(10, 50px);
@@ -268,7 +269,7 @@ figcaption {
 }
 
 .next-step {
-    margin-top: 260px;
+    margin-top: 150px;
     position: relative;
     overflow: hidden;
     margin-bottom: 0;
