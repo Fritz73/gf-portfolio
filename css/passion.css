@@ -12,6 +12,11 @@
     opacity: 0;
 }
 
+.cover > .description-wrapper {
+    margin-left: 0;
+    max-width: 80%;
+}
+
 
 .intro {
     display: flex;
