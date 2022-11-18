@@ -105,11 +105,10 @@ figcaption {
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 10px;
     grid-template-areas:
     "h3 h3 h3 h3 h3"
     "p1 t1 p2 t2 p3"
-    "p1 t1 p2 t2 p3"
+    "p1 t1 p2 t3 p3"
     "t4 t4 t4 t4 t4"
 }
 
@@ -120,8 +119,10 @@ figcaption {
 }
 
 .three-screenshots > div > p {
-    position: absolute;
-    left: -3em;
+    margin: 0 5px;
+    position: relative;
+    top: 15px;
+    transform: scale(0.8, 1);
 }
 .three-screenshots > div > div > p {
     margin: 5px 0;
