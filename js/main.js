@@ -2,12 +2,22 @@ let navBar = document.querySelector('nav');
 let navBarHeight = navBar.offsetHeight;
 let coverHeight = document.querySelector('.cover').offsetHeight;
 
+let lastScrollPosition = 0;
 document.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop < coverHeight - navBarHeight)
+    let scrollPosition = document.documentElement.scrollTop;
+    if (scrollPosition < coverHeight - navBarHeight) {
         navBar.style.backgroundColor = 'rgba(1,1,1,0)';
-    else
+    }
+    else {
         navBar.style.backgroundColor = 'rgba(1,1,1,.5)';
-})
+        if (scrollPosition > lastScrollPosition) {
+            navBar.style.top = '-200px';
+        } else {
+            navBar.style.top = '0';
+        }
+    }
+    lastScrollPosition = Math.max(0, scrollPosition);
+});
 
 
 function getViewport() {
