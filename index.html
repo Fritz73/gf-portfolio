@@ -46,7 +46,8 @@
                     </p>
                 </div>
 
-                <div class="cover-image-wrapper"></div>
+                <div class="cover-image-wrapper">
+                </div>
 
                 <div class="wave-wrapper">
                     <svg id="visual"
@@ -82,8 +83,8 @@
                 </div>
 
             </section>
-            <div class="spacer-bottom">
-
+            <div class="spacer-bottom-wrapper">
+                <svg id="visual" viewBox="0 0 960 50" width="960" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 14L32 16.2C64 18.3 128 22.7 192 25.3C256 28 320 29 384 27.5C448 26 512 22 576 19.2C640 16.3 704 14.7 768 16.2C832 17.7 896 22.3 928 24.7L960 27L960 0L928 0C896 0 832 0 768 0C704 0 640 0 576 0C512 0 448 0 384 0C320 0 256 0 192 0C128 0 64 0 32 0L0 0Z" fill="#2e799f"></path></svg>
             </div>
 
             <section class="pet">
@@ -179,36 +180,43 @@
         <script src="./js/index.js"></script>
 
         <script>
-            KUTE.fromTo(
+            const tween1 = KUTE.fromTo(
                 '#w11',
                 {path: '#w11'},
                 {path: '#w21'},
                 {repeat: 999, duration: 5000, yoyo: true}
-            ).start();
-            KUTE.fromTo(
+            );
+            const tween2 = KUTE.fromTo(
                 '#w12',
                 {path: '#w12'},
                 {path: '#w22'},
                 {repeat: 999, duration: 5000, yoyo: true}
-            ).start();
-            KUTE.fromTo(
+            );
+            const tween3 = KUTE.fromTo(
                 '#w13',
                 {path: '#w13'},
                 {path: '#w23'},
                 {repeat: 999, duration: 5000, yoyo: true}
-            ).start();
-            KUTE.fromTo(
+            );
+            const tween4 = KUTE.fromTo(
                 '#w14',
                 {path: '#w14'},
                 {path: '#w24'},
                 {repeat: 999, duration: 5000, yoyo: true}
-            ).start();
-            KUTE.fromTo(
+            );
+            const tween5 = KUTE.fromTo(
                 '#w15',
                 {path: '#w15'},
                 {path: '#w25'},
                 {repeat: 999, duration: 5000, yoyo: true}
-            ).start();
+            );
+            setTimeout(() => {
+                tween1.start();
+                tween2.start();
+                tween3.start();
+                tween4.start();
+                tween5.start();
+            }, 3000);
         </script>
     </body>
 </html>
