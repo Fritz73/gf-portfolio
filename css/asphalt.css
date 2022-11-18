@@ -1,7 +1,6 @@
 .cover {
     background-image: url(../assets/asphalt/cover.jpg);
     background-size: cover;
-    background-position: center;
     align-items: center;
 }
 
@@ -9,10 +8,6 @@
     max-width: 60%;
     z-index: 1;
     color: aliceblue;
-}
-
-.description {
-    font-size: 30px;
 }
 
 .mask {

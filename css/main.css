@@ -63,6 +63,7 @@ nav {
     margin: 0;
     overflow: hidden;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .cover > .mask {

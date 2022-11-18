@@ -62,8 +62,10 @@ let appearOnLoad = document.querySelectorAll('section:not(.cover) > div, section
 // }
 
 let coverDescription = document.querySelector('.cover > .description-wrapper');
+let cover = document.querySelector('.cover');
 document.addEventListener('scroll', () => {
     coverDescription.style.top = String(document.documentElement.scrollTop) + 'px';
+    cover.style.backgroundPositionY = String(-1.5 * document.documentElement.scrollTop) + 'px';
 });
 
 
