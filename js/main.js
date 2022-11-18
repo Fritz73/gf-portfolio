@@ -61,6 +61,11 @@ let appearOnLoad = document.querySelectorAll('section:not(.cover) > div, section
 //     });
 // }
 
+let coverDescription = document.querySelector('.cover > .description-wrapper');
+document.addEventListener('scroll', () => {
+    coverDescription.style.top = String(document.documentElement.scrollTop) + 'px';
+});
+
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
