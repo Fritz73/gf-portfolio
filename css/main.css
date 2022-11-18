@@ -27,6 +27,12 @@ h1, h2 {
     text-transform: capitalize;
 }
 
+section:not(.cover) > div,
+section:not(.cover) > h2 {
+    transition: .5s all ease-out;
+    opacity: 0;
+}
+
 nav {
     display: flex;
     flex-direction: row;
