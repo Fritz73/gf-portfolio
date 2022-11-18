@@ -71,6 +71,7 @@ nav {
 
 
 .spacer-bottom-wrapper {
+    position: relative;
     width: 110%;
     left: -5%;
 }
