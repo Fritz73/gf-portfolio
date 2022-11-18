@@ -16,10 +16,11 @@ nav > a {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: #253551;
+    background-color: #0A0F2C;
     /*animation: sky-light-up 3s ease-out 0.5s;*/
     /*animation-fill-mode: both;*/
 }
+
 
 @keyframes appear {
     from {
