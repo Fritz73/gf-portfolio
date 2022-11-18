@@ -2,7 +2,7 @@ let navBar = document.querySelector('nav');
 let navBarHeight = navBar.offsetHeight;
 let coverHeight = document.querySelector('.cover').offsetHeight;
 
-document.addEventListener('scroll', event => {
+document.addEventListener('scroll', () => {
     if (document.documentElement.scrollTop < coverHeight - navBarHeight)
         navBar.style.backgroundColor = 'rgba(1,1,1,0)';
     else
@@ -46,6 +46,7 @@ for (let i = 0; i < appearOnLoad.length; i++) {
     document.addEventListener('scroll', () => {
         if (target.getBoundingClientRect().top < viewportHeight * 0.8) {
             target.style.opacity = '1';
+            target.style.top = '0';
         }
     });
 }
