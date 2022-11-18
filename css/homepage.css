@@ -87,8 +87,30 @@ nav {
     background-position: center;
     background-size: cover;
     background-image: url("../assets/wave2.svg");
+    border: 0;
 }
 
+
+.wave-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    z-index: 9;
+    width: 110%;
+    object-fit: cover;
+    margin-bottom: -10px;
+    border: 0;
+}
+
+svg {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+#w21, #w22, #w23, #w24, #w25 {
+    display: none;
+}
 
 .product-wrapper {
     display: flex;
