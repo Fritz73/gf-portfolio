@@ -187,6 +187,18 @@ a {
     padding: 5px 0;
 }
 
+.prev-next > a:hover {
+    color: rgb(155, 155, 155);
+}
+
+footer a:hover {
+    color: rgb(155, 155, 155);
+}
+
+.download a:hover {
+    color: rgb(155, 155, 155);
+}
+
 a:hover {
     color: rgb(155, 155, 155);
 }
@@ -207,10 +219,6 @@ footer {
 
 .download > a {
     color: aliceblue;
-}
-
-.download > a:hover {
-    opacity: .8;
 }
 
 @media (max-width: 1800px) {

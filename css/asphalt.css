@@ -2,6 +2,7 @@
     background-image: url(../assets/asphalt/cover.jpg);
     background-size: cover;
     align-items: center;
+    background-repeat: repeat;
 }
 
 .description-wrapper {
