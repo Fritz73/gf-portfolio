@@ -28,6 +28,7 @@ h2 {
 
 h1, h2 {
     text-transform: capitalize;
+    line-height: initial;
 }
 
 section:not(.cover) > div,
