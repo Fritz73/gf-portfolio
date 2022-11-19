@@ -57,9 +57,15 @@
 }
 
 .DIYs > img {
-    position: static;
+    position: relative;
     max-width: 300px;
     max-height: 300px;
+    transition: all 0.5s ease-out;
+}
+
+.DIYs > img:hover {
+    transform: scale(1.5);
+    z-index: 9;
 }
 
 .paintings {
