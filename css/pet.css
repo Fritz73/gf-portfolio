@@ -47,19 +47,14 @@ h3 {
     grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
     grid-template-areas: ". img1 img2 img3 img4 .";
     gap: 30px;
+    background-image: url("../assets/pet/b1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .concept-statement > .image-wrapper > img {
     position: relative;
     z-index: 1;
-}
-
-.concept-statement > .image-wrapper > .background {
-    position: absolute;
-    z-index: -1;
-    top: -100%;
-    left: -50%;
-    width: 150%;
-    height: auto;
 }
 
 .problem-statement {

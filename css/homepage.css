@@ -75,6 +75,10 @@ nav {
     width: 110%;
     left: -5%;
 }
+.spacer-bottom-wrapper > svg {
+    position: relative;
+    bottom: 10px;
+}
 
 .wave-wrapper {
     position: absolute;
