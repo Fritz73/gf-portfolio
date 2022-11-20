@@ -203,6 +203,10 @@ a:hover {
     color: rgb(155, 155, 155);
 }
 
+.prev-next > a > span:nth-child(2) {
+    font-weight: 600;
+}
+
 footer {
     font-weight: 600;
 }
