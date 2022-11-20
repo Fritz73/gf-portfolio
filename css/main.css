@@ -233,6 +233,10 @@ a:hover {
     color: rgb(155, 155, 155);
 }
 
+.prev-next > a > span:first-child {
+    text-transform: capitalize;
+}
+
 .prev-next > a > span:nth-child(2) {
     font-weight: 600;
 }
