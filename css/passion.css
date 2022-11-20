@@ -16,6 +16,10 @@
     max-width: 80%;
 }
 
+.description-wrapper h1 {
+    font-size: 60px;
+}
+
 
 .intro {
     display: flex;
@@ -79,6 +83,10 @@
     grid-template-areas:
     "p1 p2 p3 p4"
     "p1 p5 p6 p7";
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
 }
 
 .paintings > .container1 > div,
@@ -99,6 +107,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
+
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
 }
 
 .travel {
@@ -116,4 +128,46 @@
 
 .travel > .need-to-move-up-p {
     margin-top: -80px;
+}
+
+@media (max-width: 1040px) {
+
+    .travel > .need-to-move-up-p {
+        width: 70%;
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .travel > .container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        height: 300px;
+    }
+
+    .travel > .need-to-move-up-p {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .paintings > .container1 {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .paintings > .container2 {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .description-wrapper h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .calligraphy > .container {
+        height: 300px;
+    }
 }
