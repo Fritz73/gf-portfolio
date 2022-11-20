@@ -73,6 +73,10 @@ nav {
     background-repeat: no-repeat;
 }
 
+.cover p {
+    font-weight: 600;
+}
+
 .cover > .mask {
     position: absolute;
     top:0;
