@@ -109,6 +109,10 @@
     margin-right: 20px;
 }
 
+.output h3 {
+    margin-bottom: 0;
+}
+
 
 .sign-up,
 .output {
