@@ -234,6 +234,7 @@ figcaption {
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 100px;
 }
 .history-version > .image-wrapper {
     display: flex;
