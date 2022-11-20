@@ -56,6 +56,10 @@ nav {
     transition: all .5s ease-out;
 }
 
+nav a {
+    font-weight: 600;
+}
+
 
 .logo {
     display: inline-block;
