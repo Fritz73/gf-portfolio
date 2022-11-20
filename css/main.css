@@ -283,3 +283,9 @@ footer {
     }
 }
 
+@media (max-width: 450px) {
+    body {
+        font-size: 12px;
+    }
+}
+

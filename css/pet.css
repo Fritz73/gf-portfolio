@@ -109,14 +109,12 @@ figcaption {
     "p1 t1 p2 t3 p3"
     "t4 t4 t4 t4 t4";
     margin-bottom: 30px;
+    column-gap: 10px;
 }
 
 .three-screenshots > div {
     display: flex;
-    position: relative;
-    top: 12%;
 }
-
 .three-screenshots > div > p {
     margin: 0 5px;
     position: relative;
@@ -311,8 +309,75 @@ figcaption {
     left: 18%;
 }
 
+@media (max-width: 1000px) {
+    .concept-statement {
+        flex-direction: column;
+    }
+    .concept-statement > div {
+        width: auto;
+    }
+    .concept-statement > .image-wrapper {
+        max-width: 100%;
+    }
+
+    .dash {
+        display: none;
+    }
+    .three-screenshots {
+        column-gap: 15px;
+    }
+    .three-screenshots > div {
+        position: static;
+    }
+
+}
+
 @media (max-width: 800px) {
     .survey-wrapper {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .three-screenshots {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "h3 h3 h3"
+        "p1 p2 p3"
+        "t1 t2 t3"
+        "t4 t4 t4";
+
+    }
+    .three-screenshots > div > div > p {
+        position: static;
+        margin-top: 0;
+    }
+
+    .problem-solution {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .three-screenshots {
+        grid-template-areas:
+        "h3 h3 h3"
+        "p1 t1 t1"
+        "p1 t1 t1"
+        "t2 t2 p2"
+        "p3 t3 t3"
+        "t4 t4 t4";
+        row-gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .three-screenshots > div > div > p {
+        margin: 0;
+    }
+    .three-screenshots > .problem-solution {
+        flex-direction: column;
+    }
+    .three-screenshots > .problem-solution > div {
+        width: auto;
     }
 }
