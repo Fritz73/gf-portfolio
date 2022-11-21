@@ -265,7 +265,7 @@ figcaption {
 
 .prev-next {
     display: flex;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .prev-next > a {
     display: flex;
