@@ -136,9 +136,10 @@ h1 > span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    background-color: #eee;
-    border-radius: 5%;
+    background-color: #e6e6e6;
+    border-radius: 10px;
     height: auto;
+    overflow: hidden;
 }
 
 .wireframe > .container2 > .gray-rr > img {
