@@ -45,6 +45,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.early-stage h2 {
+    margin-bottom: 0;
+}
 
 .next-step {
     margin-top: 100px;

@@ -261,7 +261,7 @@ figcaption {
 }
 
 .next-step {
-    margin-top: 150px;
+    margin-top: 100px;
     position: relative;
     overflow: hidden;
     margin-bottom: 0;
@@ -269,15 +269,20 @@ figcaption {
 }
 
 .next-step > .table {
-    margin: 60px 0;
+    margin: 30px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 60px;
+    margin-bottom: 0;
 }
 
 .next-step > .table > div {
     display: flex;
     flex-direction: column;
+}
+
+.next-step p {
+    margin-bottom: 0;;
 }
 
 .orange-circle {

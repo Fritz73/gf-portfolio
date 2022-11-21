@@ -235,6 +235,7 @@ a:hover {
 
 .prev-next > a > span:first-child {
     text-transform: capitalize;
+    margin-bottom: -.1em;
 }
 
 .prev-next > a > span:nth-child(2) {
