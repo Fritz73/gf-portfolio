@@ -273,19 +273,31 @@ footer {
 
 @media (max-width: 1400px) {
     section {
-        margin: 80px 5%;
+        margin: 80px 10%;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     body {
-        font-size: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 13px;
+    }
+    section {
+        margin: 80px 8%;
     }
 }
 
 @media (max-width: 450px) {
     body {
         font-size: 12px;
+    }
+    section {
+        margin: 80px 5%;
     }
 }
 
