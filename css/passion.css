@@ -11,9 +11,9 @@
     opacity: 0;
 }
 
-.cover > .description-wrapper {
-    margin-left: 0;
-    max-width: 80%;
+
+.description-wrapper {
+    color: aliceblue;
 }
 
 .description-wrapper h1 {
