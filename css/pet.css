@@ -115,7 +115,7 @@ figcaption {
 .three-screenshots > div {
     display: flex;
 }
-.three-screenshots > div > p {
+.three-screenshots .dash {
     margin: 0 5px;
     position: relative;
     top: 15px;
@@ -125,6 +125,7 @@ figcaption {
     margin: 5px 0;
     position: relative;
     top: 15px;
+    line-height: 1.3em;
 }
 
 .three-screenshots > .problem-solution {
@@ -134,6 +135,15 @@ figcaption {
 
 .three-screenshots > .problem-solution > div {
     width: 45%;
+}
+
+.move-left {
+    position: relative;
+    right: 1.5vw;
+}
+
+.pointer p {
+    line-height: 1.3em;
 }
 /* formatting pic with pointers*/
 .explore-page {
