@@ -106,7 +106,8 @@ svg {
     flex-direction: row-reverse;
 }
 
-.factory > .product-wrapper {
+.factory > .product-wrapper,
+.experience > .product-wrapper {
     flex-direction: row;
 }
 
@@ -141,7 +142,7 @@ svg {
     display: flex;
     padding-bottom: 5px;
     border-bottom: 2px solid #253551;
-    color:#253551;
+    color: #253551;
     width: fit-content;
     transition: all .3s ease-out;
 }
@@ -164,9 +165,19 @@ svg {
     max-width: 45%;
 }
 
-.factory > .product-wrapper > .product-image-wrapper {
+.factory > .product-wrapper > .product-image-wrapper,
+.experience > .product-wrapper > .product-image-wrapper {
     margin-right: 0;
     margin-left: auto;
+}
+
+.experience p {
+    font-weight: 600;
+    margin: .2em 0;
+}
+
+.experience strong {
+    font-weight: 900;
 }
 
 main {
