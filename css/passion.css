@@ -1,6 +1,5 @@
 .cover {
     align-items: center;
-    justify-content: center;
     background-image: url(../assets/passion/cover.png);
     background-color: black;
     background-size: 100%;
@@ -14,10 +13,6 @@
 
 .description-wrapper {
     color: aliceblue;
-}
-
-.description-wrapper h1 {
-    font-size: 60px;
 }
 
 
