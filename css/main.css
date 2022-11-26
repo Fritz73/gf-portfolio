@@ -264,6 +264,38 @@ footer h2, footer h3 {
     color: aliceblue;
 }
 
+.gallery {
+    padding-bottom: 5px;
+}
+
+/* width */
+.gallery::-webkit-scrollbar {
+    height: 15px;
+    width: 15px;
+}
+
+/* Track */
+.gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100px;
+}
+
+/* Handle */
+.gallery::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: gainsboro;
+    /*background-image: linear-gradient(90deg, #7e93cb 0%, #a1acd2 99%);*/
+    /*background-image: url(../assets/main/IMG_5427.jpeg);*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+}
+
+/* Handle on hover */
+.gallery::-webkit-scrollbar-thumb:hover {
+    /*background-image: linear-gradient(90deg, #3662d0 0%, #708ad4 99%);*/
+}
+
+
 @media (max-width: 1800px) {
     section {
         margin: 80px 15%;
