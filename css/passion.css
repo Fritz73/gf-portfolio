@@ -35,6 +35,22 @@
     padding-left: 14px;
 }
 
+.calligraphy > .header {
+    display: flex;
+    align-items: center;
+}
+
+.calligraphy > .header > div {
+    height: 2em;
+    margin-left: 20px;
+    border-radius: 1em;
+    overflow: hidden;
+    max-width: 7em;
+}
+
+.calligraphy > .header img {
+    object-fit: cover;
+}
 
 .calligraphy > .container {
     height: 400px;
