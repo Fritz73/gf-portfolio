@@ -10,6 +10,10 @@ body {
     letter-spacing: 0;
 }
 
+main {
+    overflow: hidden;
+}
+
 section {
     margin: 80px 20%;
 }
