@@ -114,12 +114,18 @@ figcaption {
 
 .three-screenshots > div {
     display: flex;
+    position: relative;
 }
+
 .three-screenshots .dash {
     margin: 0 5px;
     position: relative;
     top: 15px;
-    transform: scale(0.8, 1);
+}
+
+.three-screenshots .right-dash {
+    position: absolute;
+    right: calc(-30px - 1vw);
 }
 .three-screenshots > div > div > p {
     margin: 5px 0;
