@@ -41,9 +41,9 @@
 }
 
 .calligraphy > .header > div {
-    height: 2em;
+    height: 2.5em;
     margin-left: 20px;
-    border-radius: 1em;
+    border-radius: 1.25em;
     overflow: hidden;
     max-width: 7em;
 }
@@ -100,9 +100,14 @@
     overflow: hidden;
 }
 
-.paintings > .container1 > div,
-.paintings > .container2 > div {
+.paintings > div > div {
     overflow: hidden;
+    transition: all .5s ease-out;
+}
+
+.paintings > div > div:hover {
+    /*transform: scale(1.2);*/
+    z-index: 8;
 }
 
 .paintings > .container1 > div > img,
