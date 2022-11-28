@@ -176,8 +176,8 @@ svg {
     margin: .2em 0;
 }
 
-.experience strong {
-    font-weight: 900;
+.experience h2 {
+    margin-bottom: 0;
 }
 
 main {
