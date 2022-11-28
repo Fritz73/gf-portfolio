@@ -92,8 +92,8 @@
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
-    "p1 p2 p3 p4 p12"
-    "p1 p5 p6 p7 p13";
+    "p1 p2 p3 p6 p13"
+    "p1 p5 p4 p7 p12";
 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
