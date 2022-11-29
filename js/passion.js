@@ -12,12 +12,6 @@ const enlargePicture = (event) => {
 
         let e = elt('div', newPic)
         e.classList.add('appendElement')
-        e.style.position = 'fixed'
-        e.style.height = '600px'
-        e.style.width = '1000px'
-        e.style.maxHeight = e.style.maxWidth = '80%'
-        e.style.backgroundColor = 'rgba(0,0,0,.7)'
-        e.style.zIndex = '8'
 
         document.body.appendChild(e);
         e.style.left = ((getViewport()[0] - e.offsetWidth) * 0.5).toString() + 'px'
