@@ -49,6 +49,18 @@ function getViewport() {
 
 let viewportWidth = getViewport()[0];
 let viewportHeight = getViewport()[1];
+
+const elt = (type, ...children) => {
+    let node = document.createElement(type);
+    for (let child of children) {
+        if (typeof (child) !== 'string')
+            node.appendChild(child)
+        else
+            node.appendChild(document.createTextNode(child))
+    }
+    return node;
+}
+
 let appearOnLoad = document.querySelectorAll('section:not(.cover) > div, section:not(.cover) > h2');
 
 // for (let i = 0; i < appearOnLoad.length; i++) {
