@@ -2,21 +2,25 @@ let navBar = document.querySelector('nav');
 let navBarHeight = navBar.offsetHeight;
 let coverHeight = document.querySelector('.cover').offsetHeight;
 
+let navLock = false;
+
 let lastScrollPosition = 0;
 document.addEventListener('scroll', () => {
-    let scrollPosition = document.documentElement.scrollTop;
-    if (scrollPosition < coverHeight - navBarHeight) {
-        navBar.style.backgroundColor = 'rgba(1,1,1,0)';
-    }
-    else {
-        navBar.style.backgroundColor = 'rgba(1,1,1,.5)';
-        if (scrollPosition > lastScrollPosition) {
-            navBar.style.top = '-200px';
-        } else {
-            navBar.style.top = '0';
+    if (!navLock) {
+        let scrollPosition = document.documentElement.scrollTop;
+        if (scrollPosition < coverHeight - navBarHeight) {
+            navBar.style.backgroundColor = 'rgba(1,1,1,0)';
         }
+        else {
+            navBar.style.backgroundColor = 'rgba(1,1,1,.5)';
+            if (scrollPosition > lastScrollPosition) {
+                navBar.style.top = '-200px';
+            } else {
+                navBar.style.top = '0';
+            }
+        }
+        lastScrollPosition = Math.max(0, scrollPosition);
     }
-    lastScrollPosition = Math.max(0, scrollPosition);
 });
 
 
@@ -91,3 +95,21 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 appearOnLoad.forEach((el) => observer.observe(el));
+
+
+let menuDrawer = document.querySelector('nav .menu-drawer')
+
+menuDrawer.onclick = (e) => {
+    let navItem = document.querySelector('nav .nav-item-wrapper')
+    if (!navItem.visible) {
+        menuDrawer.style.rotate = '-90deg'
+        navItem.classList.add('visible')
+        navLock = true
+    } else {
+        menuDrawer.style.rotate = '0deg'
+        navItem.classList.remove('visible')
+        navLock = false
+    }
+    navItem.visible = !navItem.visible
+    e.stopPropagation()
+}
