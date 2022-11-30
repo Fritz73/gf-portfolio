@@ -2,25 +2,21 @@ let navBar = document.querySelector('nav');
 let navBarHeight = navBar.offsetHeight;
 let coverHeight = document.querySelector('.cover').offsetHeight;
 
-let navLock = false;
-
 let lastScrollPosition = 0;
 document.addEventListener('scroll', () => {
-    if (!navLock) {
-        let scrollPosition = document.documentElement.scrollTop;
-        if (scrollPosition < coverHeight - navBarHeight) {
-            navBar.style.backgroundColor = 'rgba(1,1,1,0)';
-        }
-        else {
-            navBar.style.backgroundColor = 'rgba(1,1,1,.5)';
-            if (scrollPosition > lastScrollPosition) {
-                navBar.style.top = '-200px';
-            } else {
-                navBar.style.top = '0';
-            }
-        }
-        lastScrollPosition = Math.max(0, scrollPosition);
+    let scrollPosition = document.documentElement.scrollTop;
+    if (scrollPosition < coverHeight - navBarHeight) {
+        navBar.style.backgroundColor = 'rgba(1,1,1,0)';
     }
+    else {
+        navBar.style.backgroundColor = 'rgba(1,1,1,.5)';
+        if (scrollPosition > lastScrollPosition) {
+            navBar.style.top = '-200px';
+        } else {
+            navBar.style.top = '0';
+        }
+    }
+    lastScrollPosition = Math.max(0, scrollPosition);
 });
 
 
@@ -67,16 +63,6 @@ const elt = (type, ...children) => {
 
 let appearOnLoad = document.querySelectorAll('section:not(.cover) > div, section:not(.cover) > h2');
 
-// for (let i = 0; i < appearOnLoad.length; i++) {
-//     let target = appearOnLoad[i];
-//     document.addEventListener('scroll', () => {
-//         if (target.getBoundingClientRect().top < viewportHeight * 0.8) {
-//             target.style.opacity = '1';
-//             target.style.top = '0';
-//         }
-//     });
-// }
-
 let coverDescription = document.querySelector('.cover > .description-wrapper');
 let cover = document.querySelector('.cover');
 document.addEventListener('scroll', () => {
@@ -104,11 +90,11 @@ menuDrawer.onclick = (e) => {
     if (!navItem.visible) {
         menuDrawer.style.rotate = '-90deg'
         navItem.classList.add('visible')
-        navLock = true
+        document.body.style.overflow = 'hidden'
     } else {
         menuDrawer.style.rotate = '0deg'
         navItem.classList.remove('visible')
-        navLock = false
+        document.body.style.overflow = 'scroll'
     }
     navItem.visible = !navItem.visible
     e.stopPropagation()
