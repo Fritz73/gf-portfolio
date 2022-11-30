@@ -200,6 +200,13 @@ main {
 
 /*---------------------------------------*/
 
+.factory .title-wrapper {
+    flex-direction: row-reverse;
+}
+
+.factory .title-decoration {
+    margin-right: 0;
+}
 
 @media (max-width: 820px) {
     .product-wrapper {
@@ -207,10 +214,22 @@ main {
         place-content: center;
         place-items: center;
     }
+
     .factory > .product-wrapper {
         flex-direction: column;
     }
 
+    .factory .title-wrapper {
+        flex-direction: row;
+        /*star align*/
+        position: relative;
+        right: calc(1.5em + 1.5vw);
+    }
+
+    .factory .title-decoration {
+        margin-right: 1.5vw;
+        margin-left: 0;
+    }
     .experience > .product-wrapper {
         flex-direction: column-reverse;
     }
