@@ -63,7 +63,6 @@ nav {
     width: 40vmin;
     position: absolute;
     right: 10vw;
-    bottom: 18vh;
     z-index: 0;
     animation: appear 4s ease-in-out;
     animation-fill-mode: both;
