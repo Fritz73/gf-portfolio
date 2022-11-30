@@ -348,7 +348,7 @@ footer h2, footer h3 {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 465px) {
     body {
         font-size: 12px;
     }
