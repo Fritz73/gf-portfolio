@@ -165,8 +165,8 @@ svg {
     max-width: 45%;
 }
 
-.factory > .product-wrapper > .product-image-wrapper,
-.experience > .product-wrapper > .product-image-wrapper {
+.factory .product-image-wrapper,
+.experience .product-image-wrapper {
     margin-right: 0;
     margin-left: auto;
 }
@@ -210,9 +210,20 @@ main {
     .factory > .product-wrapper {
         flex-direction: column;
     }
+
+    .experience > .product-wrapper {
+        flex-direction: column-reverse;
+    }
+
     .pet, .factory, .asphalt {
         padding: 0;
     }
+
+    .factory .product-image-wrapper,
+    .experience .product-image-wrapper {
+        margin-left: 0;
+    }
+
     .product-text {
         max-width: 80%;
     }
