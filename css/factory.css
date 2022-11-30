@@ -237,6 +237,10 @@ figcaption {
     position: relative;
     margin-top: 100px;
 }
+
+.history-version p {
+    line-height: initial;
+}
 .history-version > .image-wrapper {
     display: flex;
     overflow-x: scroll;
@@ -249,6 +253,11 @@ figcaption {
     height: 100%;
     width: auto;
     border: 1px solid black;
+}
+
+.role-switch .move-down {
+    position: relative;
+    top: 100px;
 }
 
 .gray-circle {
@@ -272,4 +281,53 @@ figcaption {
     flex-direction: column;
     text-transform: uppercase;
     color: #000;
+}
+
+
+@media (max-width: 800px) {
+    .history-version p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .history-version p > strong {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .empathy-map {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "h2 h2"
+        "e1 e2"
+        "e3 e4"
+        "e5  .";
+    }
+
+    .fig-n-text {
+        flex-direction: column;
+    }
+    .fig-n-text > h3,
+    .fig-n-text > figure,
+    .fig-n-text > .text-wrapper {
+        width: 100%;
+    }
+
+    .role-switch,
+    .log-in {
+        grid-template-columns: 1fr;
+    }
+    .role-switch .move-down {
+        top: 0;
+    }
+
+    .fig-n-text, .role-switch, .log-in {
+        padding-top: 30px;
+        border-top: 1px solid #ddd;
+    }
 }
