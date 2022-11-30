@@ -449,6 +449,7 @@ figcaption {
 
     .next-step > .table {
         grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
     }
 
 }
@@ -511,7 +512,6 @@ figcaption {
     }
 
     .next-step > .table {
-        grid-template-columns: 1fr;
+        column-gap: 10px;
     }
-
 }
