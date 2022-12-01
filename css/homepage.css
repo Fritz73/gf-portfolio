@@ -230,7 +230,7 @@ main {
         margin-left: 0;
     }
     .experience > .product-wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .pet, .factory, .asphalt {
