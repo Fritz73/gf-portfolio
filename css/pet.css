@@ -309,15 +309,17 @@ figcaption {
     background-color: #F6C848;
 }
 
-.next {
+.prev-next {
     display: flex;
-    flex-direction: column;
-    width: fit-content;
-    margin-left: auto;
-    text-transform: uppercase;
-    color: #000;
+    position: relative;
     z-index: 2;
     margin-top: 120px;
+}
+.prev-next > a {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #000;
 }
 
 

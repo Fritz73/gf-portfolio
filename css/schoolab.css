@@ -1,0 +1,174 @@
+.cover {
+    background-image: url(../assets/schoolab/cover.png);
+    background-size: contain;
+    align-items: center;
+    background-repeat: repeat;
+}
+
+.description-wrapper {
+    max-width: 80%;
+    z-index: 1;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.cover .cover-image-wrapper {
+    position: relative;
+    max-width: 40%;
+    z-index: 9;
+}
+
+
+.mask {
+    opacity: .5;
+}
+
+.my-role {
+    display: flex;
+    justify-content: space-between;
+}
+.my-role > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.stakeholder {
+    display: flex;
+}
+
+.stakeholder img {
+    max-width: 45%;
+    margin-left: auto;
+}
+
+
+.principle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.principle > div:not(.spacer) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.principle img {
+    max-height: 55%;
+}
+.principle .spacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+.principle .spacer > span {
+    color: darkgreen;
+    font-size: 5vmax;
+}
+.principle .spacer > .down {
+    display: none;
+}
+
+
+.product-analysis .image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.extract .image-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+.product-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2vw;
+    margin: 50px 0;
+    height: fit-content;
+}
+.product-details > div {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.product-details > .gif {
+    grid-column: 2/4;
+}
+
+
+.end-matters > div {
+    margin: 80px 0;
+}
+
+.prev-next .next {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: auto;
+    text-transform: uppercase;
+    color: #000;
+}
+
+@media (max-width: 850px) {
+    .cover-image-wrapper{
+        display: none;
+    }
+
+    .my-role {
+        flex-direction: column;
+    }
+
+    .product-analysis > .image-container,
+    .extract > .image-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-details {
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        border-top: 1px solid #ddd;
+    }
+    .product-details > .gif {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .product-details img {
+        max-width: 70%;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .principle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .principle > div {
+        margin: 20px 0;
+        align-items: center;
+    }
+    .principle .spacer > .right {
+        display: none;
+    }
+    .principle .spacer > .down {
+        display: block;
+    }
+    .principle img {
+        max-width: 70%;
+    }
+
+    .stakeholder {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stakeholder img {
+        max-width: 70%;
+        margin: 20px 0;
+    }
+}
