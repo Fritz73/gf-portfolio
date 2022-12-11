@@ -124,8 +124,12 @@ svg {
     transform: scale(1,1.24);
 }
 
-.star-align {
+.text-end .title-wrapper {
     right: calc(1.5em + 1.5vw);
+}
+
+.text-end .title-decoration {
+    margin-left: 0;
 }
 
 
@@ -244,10 +248,17 @@ main {
         min-width: 80%;
         margin: 20px 0 0 0;
     }
-    /*have to specify (specificity problem)*/
-    .factory > .product-wrapper > .product-image-wrapper {
-        margin-right: 0;
+
+
+    .text-start .title-wrapper {
+        flex-direction: row;
+        right: calc(1.5em + 1.5vw);
     }
+    .text-start .title-decoration {
+        margin-right: 1.5vw;
+        margin-left: 0;
+    }
+
     .name-title {
         margin: 15px 0;
     }
