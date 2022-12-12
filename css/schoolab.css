@@ -1,3 +1,6 @@
+section {
+    margin-top: 110px;
+}
 .cover {
     background-image: url(../assets/schoolab/cover.png);
     background-size: contain;
@@ -36,10 +39,11 @@
 
 .stakeholder {
     display: flex;
+    align-items: center;
 }
 
 .stakeholder img {
-    max-width: 45%;
+    max-width: 35%;
     margin-left: auto;
 }
 
@@ -66,6 +70,7 @@
 .principle .spacer > span {
     color: darkgreen;
     font-size: 5vmax;
+    margin: 0 15px;
 }
 .principle .spacer > .down {
     display: none;
@@ -121,6 +126,9 @@
 
     .my-role {
         flex-direction: column;
+    }
+    .my-role > div {
+        margin: 5px 0;
     }
 
     .product-analysis > .image-container,
