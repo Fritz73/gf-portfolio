@@ -69,11 +69,8 @@ section {
 }
 .principle .spacer > span {
     color: darkgreen;
-    font-size: 5vmax;
+    font-size: 4vmax;
     margin: 0 15px;
-}
-.principle .spacer > .down {
-    display: none;
 }
 
 
@@ -162,11 +159,9 @@ section {
         align-items: center;
     }
     .principle .spacer > .right {
-        display: none;
+        rotate: 90deg;
     }
-    .principle .spacer > .down {
-        display: block;
-    }
+
     .principle img {
         max-width: 70%;
     }
