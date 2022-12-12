@@ -106,6 +106,14 @@ section {
 .end-matters > div {
     margin: 80px 0;
 }
+.end-matters .material-symbols-outlined {
+    color: black;
+    margin-right: 1em;
+}
+.end-matters .bullet {
+    display: flex;
+    align-items: center;
+}
 
 .prev-next .next {
     display: flex;
