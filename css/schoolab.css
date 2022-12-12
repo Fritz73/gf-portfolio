@@ -54,13 +54,13 @@ section {
 }
 
 .principle > div:not(.spacer) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 20px;
+    justify-items: center;
 }
-.principle img {
-    max-height: 55%;
-}
+
 .principle .spacer {
     display: flex;
     align-items: center;
