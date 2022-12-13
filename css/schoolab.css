@@ -106,11 +106,12 @@ section {
 .end-matters > div {
     margin: 80px 0;
 }
-.end-matters .material-symbols-outlined {
+.end-matters .material-symbols-outlined,
+.ideation .material-symbols-outlined {
     color: black;
     margin-right: 1em;
 }
-.end-matters .bullet {
+.symbol-bullet {
     display: flex;
     align-items: center;
 }
