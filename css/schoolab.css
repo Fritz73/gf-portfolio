@@ -103,6 +103,29 @@ section {
 }
 
 
+.result {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 50px);
+    column-gap: 15px;
+}
+.result > img {
+    grid-column: 1;
+    grid-row: 1 / 11;
+}
+.result > .pointer,
+.result > h3 {
+    grid-column: 2;
+    display: flex;
+    justify-content: left;
+}
+.pointer .dash {
+    margin-right: 15px;
+}
+
+
+
 .end-matters > div {
     margin: 80px 0;
 }
@@ -155,6 +178,11 @@ section {
         max-width: 70%;
         justify-self: center;
         align-self: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
     }
 }
 
