@@ -103,11 +103,11 @@ section {
 }
 
 
-.result {
+.result, .service {
     margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, 50px);
+    grid-template-rows: repeat(10, 2.6vw);
     column-gap: 15px;
 }
 .result > img {
@@ -115,13 +115,23 @@ section {
     grid-row: 1 / 11;
 }
 .result > .pointer,
-.result > h3 {
+.result > h3,
+.service > .pointer,
+.service > h3 {
     grid-column: 2;
     display: flex;
     justify-content: left;
 }
-.pointer .dash {
+.dash {
     margin-right: 15px;
+    color: #ddd;
+}
+
+.service {
+    grid-template-rows: repeat(27, 2.6vw);
+}
+.service img {
+    grid-row: 1/28;
 }
 
 
@@ -148,7 +158,12 @@ section {
     color: #000;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 990px) {
+    .stupid-pointer {
+        grid-row: 1 !important;
+    }
+}
+@media (max-width: 861px) {
     .cover-image-wrapper{
         display: none;
     }
@@ -180,9 +195,14 @@ section {
         align-self: center;
     }
 
-    .menu {
+    .result, .service {
         display: flex;
         flex-direction: column;
+        border-top: 1px solid #ddd;
+        padding-top: 30px;
+    }
+    .dash {
+        display: none;
     }
 }
 
