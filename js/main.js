@@ -49,6 +49,13 @@ function getViewport() {
 
 let viewportWidth = getViewport()[0];
 let viewportHeight = getViewport()[1];
+let coverImageMoveDown = viewportWidth / viewportHeight < 1 ? .3 : 0;
+setInterval(() => {
+    viewportWidth = getViewport()[0];
+    viewportHeight = getViewport()[1];
+    coverImageMoveDown = viewportWidth / viewportHeight < 1 ? .3 : 0;
+}, 1000)
+
 
 const elt = (type, ...children) => {
     let node = document.createElement(type);
@@ -66,11 +73,10 @@ let appearOnLoad = document.querySelectorAll('section:not(.cover) > div, section
 let coverDescription = document.querySelector('.cover > .description-wrapper');
 let cover = document.querySelector('.cover');
 
-let moveDown = 0;
-cover.style.backgroundPositionY = String(moveDown * coverHeight) + 'px';
+cover.style.backgroundPositionY = String(coverImageMoveDown * coverHeight) + 'px';
 document.addEventListener('scroll', () => {
     coverDescription.style.top = String(document.documentElement.scrollTop) + 'px';
-    cover.style.backgroundPositionY = String(-1.5 * document.documentElement.scrollTop + moveDown * coverHeight) + 'px';
+    cover.style.backgroundPositionY = String(-0.7 * document.documentElement.scrollTop + coverImageMoveDown * coverHeight) + 'px';
 });
 
 
