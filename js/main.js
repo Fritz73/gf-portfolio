@@ -12,6 +12,7 @@ document.addEventListener('scroll', () => {
         navBar.style.backgroundColor = 'rgba(1,1,1,.5)';
         if (scrollPosition > lastScrollPosition) {
             navBar.style.top = '-200px';
+            projectDrawerDisappear();
         } else {
             navBar.style.top = '0';
         }
@@ -107,4 +108,25 @@ menuDrawer.onclick = (e) => {
     }
     navItem.visible = !navItem.visible
     e.stopPropagation()
+}
+
+let designProjectsExtend = document.querySelector('nav .project-menu .material-symbols-outlined');
+let projectDrawer = document.querySelector('nav .projects');
+let homeLink = document.querySelector('nav .project-menu');
+function projectDrawerDisappear() {
+    projectDrawer.classList.remove('show-projects')
+    homeLink.classList.remove('projects-extended')
+    designProjectsExtend.classList.remove('expand-rotate')
+}
+designProjectsExtend.onclick = () => {
+    if (projectDrawer.classList.contains('show-projects')) {
+        projectDrawerDisappear()
+    }
+    else {
+        projectDrawer.classList.add('show-projects')
+        homeLink.classList.add('projects-extended')
+        designProjectsExtend.classList.add('expand-rotate')
+    }
+}
+designProjectsExtend.onmouseout = () => {
 }

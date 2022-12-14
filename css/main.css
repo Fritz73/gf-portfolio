@@ -65,6 +65,16 @@ nav {
 nav a {
     font-weight: 600;
 }
+nav .nav-item-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+nav .nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 nav .menu-drawer {
     margin: 0 20px 0 auto;
@@ -75,7 +85,55 @@ nav .menu-drawer {
 nav .menu-drawer:hover {
     opacity: .8;
 }
+nav .project-menu {
+    height: 100%;
+}
+nav .project-menu {
+    transition: all .4s ease-out;
+}
+nav .projects-extended {
+    background-color: rgba(0,0,0, .4);
+}
+nav .projects {
+    display: flex;
+    flex-direction: column;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    overflow: hidden;
+    max-height: 0;
 
+    align-items: center;
+    background-color: rgba(0,0,0, .7);
+    padding: 0 .3em;
+}
+nav .projects a {
+    color: aliceblue;
+    padding-bottom: .5em;
+}
+
+nav .show-projects {
+    max-height: 300px;
+}
+nav .homepage-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav .homepage-link .material-symbols-outlined {
+    cursor: pointer;
+    padding: 0 .3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease-out;
+    rotate: -90deg;
+}
+nav .homepage-link .expand-rotate {
+    rotate: 0deg;
+}
 
 .logo {
     display: inline-block;
@@ -130,9 +188,10 @@ img {
 
 
 @media screen and (max-width: 500px) {
-    .nav-item {
+    nav .nav-item {
         padding-bottom: 5px;
     }
+
 }
 
 .nav-item {
@@ -142,12 +201,15 @@ img {
     place-content: center;
     color:aliceblue;
 }
+.passion {
+    margin-left: 1em;
+}
 
-.nav-item-wrapper > a {
+.nav-item-wrapper a {
     transition: all .3s ease-out;
 }
 
-.nav-item-wrapper > a:hover {
+.nav-item-wrapper a:hover {
     color: rgb(141, 176, 251);
 }
 /*above styles nav bar*/
@@ -370,9 +432,9 @@ footer h2, footer h3 {
         height: 100%;
         width: 100%;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         background-color: black;
+        padding-top: 30vh;
 
         transition: all .3s ease-out;
     }
@@ -384,6 +446,16 @@ footer h2, footer h3 {
     nav .nav-item {
         font-size: 20px;
         margin: 20px 0;
+        height: auto;
+    }
+
+    nav .project-menu {
+        height: auto;
+    }
+    nav .homepage-link {
+        height: auto;
+        position: relative;
+        left: 1.5em;
     }
 }
 
