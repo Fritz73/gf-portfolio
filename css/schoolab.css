@@ -13,13 +13,13 @@ section {
 
 ;
     background-position: center;
-    background-size: 60%, cover;
+    background-size: 40%, cover;
     background-color: #0E132C;
 }
 
 
 .description-wrapper {
-    max-width: 60%;
+    max-width: 50%;
     z-index: 1;
     color: aliceblue;
     display: flex;
@@ -27,8 +27,11 @@ section {
 }
 
 .cover .cover-image-wrapper {
-    position: relative;
-    max-width: 40%;
+    position: absolute;
+    max-width: 36%;
+    max-height: 36%;
+    right: -5%;
+    bottom: 45%;
     z-index: 9;
 }
 

@@ -50,11 +50,11 @@ function getViewport() {
 
 let viewportWidth = getViewport()[0];
 let viewportHeight = getViewport()[1];
-let coverImageMoveDown = viewportWidth / viewportHeight < 1 ? .3 : 0;
+let coverImageMoveDown = viewportWidth / viewportHeight < 1 ? .3 : .1;
 setInterval(() => {
     viewportWidth = getViewport()[0];
     viewportHeight = getViewport()[1];
-    coverImageMoveDown = viewportWidth / viewportHeight < 1 ? .3 : 0;
+    coverImageMoveDown = viewportWidth / viewportHeight < 1 ? .3 : .1;
 }, 1000)
 
 
