@@ -6,10 +6,10 @@ let lastScrollPosition = 0;
 document.addEventListener('scroll', () => {
     let scrollPosition = document.documentElement.scrollTop;
     if (scrollPosition < coverHeight - navBarHeight) {
-        navBar.style.backgroundColor = 'rgba(1,1,1,0)';
+        navBar.style.backgroundColor = 'rgba(0,0,0,0)';
     }
     else {
-        navBar.style.backgroundColor = 'rgba(1,1,1,.5)';
+        navBar.style.backgroundColor = '#0A0F2C';
         if (scrollPosition > lastScrollPosition) {
             navBar.style.top = '-200px';
             projectDrawerDisappear();
@@ -117,16 +117,30 @@ function projectDrawerDisappear() {
     projectDrawer.classList.remove('show-projects')
     homeLink.classList.remove('projects-extended')
     designProjectsExtend.classList.remove('expand-rotate')
+    designProjectsExtend.style.color = 'aliceblue'
 }
-designProjectsExtend.onclick = () => {
-    if (projectDrawer.classList.contains('show-projects')) {
+function projectDrawerAppear() {
+    projectDrawer.classList.add('show-projects')
+    homeLink.classList.add('projects-extended')
+    designProjectsExtend.classList.add('expand-rotate')
+    designProjectsExtend.style.color = 'rgb(141, 176, 251)'
+}
+
+
+if (window.matchMedia('(hover: none)').matches) {
+    designProjectsExtend.onclick = () => {
+        if (projectDrawer.classList.contains('show-projects')) {
+            projectDrawerDisappear()
+        }
+        else {
+            projectDrawerAppear()
+        }
+    }
+} else {
+    homeLink.onmouseout = () => {
         projectDrawerDisappear()
     }
-    else {
-        projectDrawer.classList.add('show-projects')
-        homeLink.classList.add('projects-extended')
-        designProjectsExtend.classList.add('expand-rotate')
+    homeLink.onmouseover = () => {
+        projectDrawerAppear()
     }
-}
-designProjectsExtend.onmouseout = () => {
 }
