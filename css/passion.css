@@ -126,18 +126,16 @@
 }
 .travel > .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "tr1 tr2 tr5"
+    "tr3 tr4 tr5";
+    grid-gap: 10px;
 }
 
-.travel > .container > img {
-    height: auto;
+.travel > .container img {
+    object-fit: cover;
 }
-
-.travel > .need-to-move-up-p {
-    margin-top: -80px;
-}
-
 
 @keyframes append-animate {
     from {
@@ -160,25 +158,16 @@
 }
 
 
-@media (max-width: 1040px) {
-
-    .travel > .need-to-move-up-p {
-        width: 70%;
-        margin-top: -50px;
-    }
-}
-
 @media (max-width: 600px) {
     .travel > .container {
         display: flex;
-        flex-wrap: nowrap;
         overflow-x: scroll;
+        overflow-y: hidden;
         height: 300px;
     }
-
-    .travel > .need-to-move-up-p {
-        width: 80%;
-        margin-top: 10px;
+    .travel .image-wrapper {
+        aspect-ratio: 4/3;
+        height: 100%;
     }
 
     .paintings > .container1 {
