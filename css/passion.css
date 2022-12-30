@@ -58,6 +58,9 @@
     display: flex;
     overflow-x: scroll;
 }
+.calligraphy img {
+    width: auto;
+}
 
 .DIYs {
     margin-top: 100px;
