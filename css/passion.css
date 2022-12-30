@@ -66,13 +66,12 @@
     margin-top: 100px;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
     grid-template-areas:
-    "h00 h00 h00   .   . d14   .   .   .   .   ."
-    "  .   .   .   . d16 d18 d18   .   .   .   ."
-    "  .   .   . d13 d11 d11 d15 d10   .   .   ."
-    "  . d12 d03 d03 d03 d06 d07 d07 d04 d04   ."
-    "d08 d05 d17 d17 d01 d01 d02 d19 d19 d09 d09";
+    "h00 h00 h00   .   .   . d14   .   .   .   .   .   ."
+    "  .   .   .   .   . d16 d24 d18 d18   .   .   .   ."
+    "  .   .   . d13 d11 d11 d15 d21 d21 d10   .   .   ."
+    "  . d12 d03 d03 d03 d06 d07 d07 d22 d22 d04 d04   ."
+    "d08 d05 d17 d17 d01 d01 d02 d19 d19 d09 d09 d20 d20";
 }
 
 .DIYs > img {
@@ -82,7 +81,8 @@
     transition: all 0.5s ease-out;
 }
 
-.DIYs > img:hover {
+.DIYs > img:hover,
+.DIYs > div:hover {
     transform: scale(1.5);
     z-index: 9;
 }
