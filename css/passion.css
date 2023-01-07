@@ -97,13 +97,13 @@
     grid-gap: 2vw;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    padding: 6vh 0;
 }
 .paintings .black-strip {
     position: absolute;
     left: 50%;
+    bottom: 0;
     width: 15%;
-    height: 100%;
+    height: 85%;
     background-color: black;
     z-index: -1;
 }
@@ -162,7 +162,7 @@
 .paintings .container22 .p21,
 .paintings .container22 .p31 {
     position: relative;
-    bottom: 40%;
+    bottom: 44%;
 }
 
 
