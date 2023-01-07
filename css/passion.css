@@ -69,9 +69,10 @@
     grid-template-areas:
     "h00 h00 h00   .   .   . d14   .   .   .   .   .   ."
     "  .   .   .   .   . d16 d24 d18 d18   .   .   .   ."
-    "  .   .   . d13 d11 d11 d15 d21 d21 d10   .   .   ."
-    "  . d12 d03 d03 d03 d06 d07 d07 d22 d22 d04 d04   ."
+    "  .   .   . d13 d11 d11 d15 d15 d21 d10   .   .   ."
+    "d12 d03 d03 d03 d03 d06 d07 d07 d22 d22 d04 d04   ."
     "d08 d05 d17 d17 d01 d01 d02 d19 d19 d09 d09 d20 d20";
+    gap: 1vw;
 }
 
 .DIYs > img {
@@ -91,24 +92,74 @@
     margin-top: 100px;
 }
 
-.paintings > .container1 {
+.paintings > .container0 {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-gap: 2vw;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 6vh 0;
+}
+.paintings .black-strip {
+    position: absolute;
+    left: 50%;
+    width: 10%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+.paintings .quadrant {
+    display: grid;
+    grid-gap: 1vw;
     grid-template-areas:
-    "p1 p1 p2 p3 p6 p13"
-    "p1 p1 p5 p4 p7 p12"
-    "p14 p15  p16 p17 p18 p19";
+    "p11 p12 p13"
+    "p21 p22 p23"
+    "p31 p32 p33";
+}
+.paintings .flex-break {
+    display: none;
+}
 
-    border-radius: 15px;
-    overflow: hidden;
+.paintings .container11 {
+    justify-items: end;
+    align-items: end;
+}
+.paintings .container12 {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    align-items: end;
+}
+.paintings .container21 {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+    align-items: start;
+}
+.paintings .container22 {
+    justify-items: start;
+    align-items: start;
 }
 
 
-.paintings > div > div {
+.paintings .image-wrapper {
     overflow: hidden;
     transition: all .5s ease-out;
     position: relative;
+}
+
+.paintings .horizontal{
+    aspect-ratio: 4/3;
+    max-width: 12vw;
+}
+.paintings .vertical {
+    aspect-ratio: 3/4;
+    max-width: 12vw;
+}
+
+.paintings .container22 .p21,
+.paintings .container22 .p31 {
+    position: relative;
+    bottom: 40%;
 }
 
 
