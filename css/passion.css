@@ -102,7 +102,7 @@
 .paintings .black-strip {
     position: absolute;
     left: 50%;
-    width: 10%;
+    width: 15%;
     height: 100%;
     background-color: black;
     z-index: -1;
@@ -120,8 +120,11 @@
 }
 
 .paintings .container11 {
+    grid-template-rows: 1fr auto auto;
     justify-items: end;
     align-items: end;
+}
+.paintings .container11 .image-wrapper {
 }
 .paintings .container12 {
     grid-template-rows: 1fr 1fr 1fr;
@@ -149,11 +152,11 @@
 
 .paintings .horizontal{
     aspect-ratio: 4/3;
-    max-width: 12vw;
+    object-fit: contain;
 }
 .paintings .vertical {
     aspect-ratio: 3/4;
-    max-width: 12vw;
+    object-fit: contain;
 }
 
 .paintings .container22 .p21,
