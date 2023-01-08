@@ -97,6 +97,7 @@
     grid-gap: 2vw;
     grid-template-columns: 1fr 1fr;
     position: relative;
+    margin-top: -10vw;
 }
 .paintings .black-strip {
     position: absolute;
