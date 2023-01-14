@@ -28,8 +28,19 @@
         gtag('js', new Date());
 
         gtag('config', 'G-SFD78PRSTN');
+
+        //loader
+        window.onload = () => {
+            let loader = document.querySelector('.loader');
+            loader.classList.add('loader-out');
+            document.body.style.overflowY = 'scroll';
+        }
     </script>
     <body>
+
+        <div class="loader">
+            <span class="loader-animation"></span>
+        </div>
 
         <nav>
             <a href="index.html" class="logo">
