@@ -13,6 +13,7 @@ body {
     visibility: visible;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -20,6 +21,12 @@ body {
 .loader-out {
     opacity: 0;
     visibility: hidden;
+}
+
+.loading-prompt {
+    transition: all .4s ease-out;
+    color: white;
+    font-size: 30px;
 }
 
 /*loader animation*/
