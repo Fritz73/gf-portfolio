@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
 body {
     overflow-y: hidden;
 }
@@ -13,6 +15,7 @@ body {
     visibility: visible;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -21,6 +24,17 @@ body {
     opacity: 0;
     visibility: hidden;
 }
+
+.loading-prompt {
+    transition: all .4s ease-out;
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
 
 /*loader animation*/
 .loader-animation {

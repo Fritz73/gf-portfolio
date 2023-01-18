@@ -30,8 +30,14 @@
         gtag('config', 'G-SFD78PRSTN');
 
         //loader
-        window.onload = () => {
+        window.onload = async () => {
             let loader = document.querySelector('.loader');
+            let loadingPrompt = document.querySelector('.loading-prompt');
+            loadingPrompt.style.opacity = '0';
+            await new Promise(r => setTimeout(r, 500));
+            loadingPrompt.textContent = 'through design';
+            loadingPrompt.style.opacity = '1';
+            await new Promise(r => setTimeout(r, 1000));
             loader.classList.add('loader-out');
             document.body.style.overflowY = 'scroll';
         }
@@ -39,6 +45,7 @@
     <body>
 
         <div class="loader">
+            <span class="loading-prompt">Let life be beautiful like summer flowers</span>
             <span class="loader-animation"></span>
         </div>
 
