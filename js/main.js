@@ -9,7 +9,7 @@ document.addEventListener('scroll', () => {
         navBar.style.backgroundColor = 'rgba(0,0,0,0)';
     }
     else {
-        navBar.style.backgroundColor = '#0A0F2C';
+        navBar.style.backgroundColor = '#000';
         if (scrollPosition > lastScrollPosition) {
             navBar.style.top = '-200px';
             projectDrawerDisappear();
