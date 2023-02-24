@@ -185,6 +185,19 @@ svg {
     display: none;
 }
 
+.visual-cue {
+    height: 15vh;
+    background-image: url("../assets/fish.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-aspect-ratio: 1180/820) {
+    .visual-cue {
+        padding-top: 5%;
+    }
+}
+
 .product-wrapper {
     display: flex;
     flex-direction: row-reverse;
