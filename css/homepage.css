@@ -187,14 +187,12 @@ svg {
 
 .visual-cue {
     height: 15vh;
-    background-image: url("../assets/fish.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 @media (max-aspect-ratio: 1180/820) {
     .visual-cue {
-        padding-top: 5%;
+        padding-top: 2%;
     }
 }
 
