@@ -185,6 +185,17 @@ svg {
     display: none;
 }
 
+.visual-cue {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+@media (max-aspect-ratio: 1180/820) {
+    .visual-cue {
+        padding-top: 2%;
+    }
+}
+
 .product-wrapper {
     display: flex;
     flex-direction: row-reverse;
