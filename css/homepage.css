@@ -134,7 +134,8 @@ nav {
 }
 
 .name-title {
-    font-size: 3.5em;
+    aspect-ratio: 7.5/1;
+    max-width: 65%;
     margin: 20px 0;
 }
 
@@ -356,6 +357,7 @@ main {
     }
 
     .name-title {
+        max-width: 100%;
         margin: 15px 0;
     }
 }
@@ -367,5 +369,9 @@ main {
     }
     .cover-image-wrapper {
         display: none;
+    }
+
+    .description-wrapper {
+       max-width: 60%;
     }
 }
