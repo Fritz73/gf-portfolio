@@ -156,6 +156,7 @@ nav {
 
 
 .spacer-bottom-wrapper {
+    /*display: none;*/
     position: relative;
     width: 110%;
     left: -5%;
@@ -167,13 +168,16 @@ nav {
 
 .wave-wrapper {
     position: absolute;
-    bottom: 0;
     left: -5%;
-    z-index: 9;
+    top: 65vh;
+    z-index: 1;
     width: 110%;
     object-fit: cover;
-    margin-bottom: -10px;
     border: 0;
+}
+/**/
+.cover {
+    /*margin-bottom: 8vh;*/
 }
 
 svg {
