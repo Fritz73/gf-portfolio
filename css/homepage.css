@@ -162,12 +162,12 @@ nav {
     width: 110%;
     left: -5%;
     bottom: 5px;
-    margin-bottom: -5vw;
+    margin-bottom: -6vw;
 }
 .wave-wrapper {
     position: absolute;
     left: -5%;
-    bottom: -5vw;
+    bottom: -2vw;
     z-index: 1;
     width: 110%;
     object-fit: cover;
