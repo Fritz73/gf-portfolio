@@ -97,12 +97,11 @@
     grid-gap: 2vw;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    margin-top: -5vw;
 }
 .paintings .black-strip {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 12%;
     width: 15%;
     height: 85%;
     background-color: black;
@@ -114,32 +113,32 @@
     grid-template-areas:
     "p11 p12 p13"
     "p21 p22 p23"
-    "p31 p32 p33";
+    "p31 p32 p33"
+    "p41 p42 p43";
 }
 .paintings .flex-break {
     display: none;
 }
 
 .paintings .container11 {
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 1fr auto auto auto;
     justify-items: end;
     align-items: end;
 }
 .paintings .container11 .image-wrapper {
 }
 .paintings .container12 {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
     justify-items: start;
     align-items: end;
 }
 .paintings .container21 {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
     justify-items: end;
     align-items: start;
 }
 .paintings .container22 {
+    grid-template-rows: repeat(4, 1fr);
     justify-items: start;
     align-items: start;
 }
@@ -160,9 +159,15 @@
     object-fit: contain;
 }
 
+.paintings .container12 .p22 {
+    position: relative;
+    top: 43.75%;
+}
+
+.paintings .container21 .p32,
+.paintings .container21 .p43,
 .paintings .container22 .p21,
-.paintings .container22 .p31,
-.paintings .container21 .p32 {
+.paintings .container22 .p31 {
     position: relative;
     bottom: 43.75%;
 }
