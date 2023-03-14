@@ -164,14 +164,19 @@ section {
     align-items: center;
 }
 
-.prev-next .next {
+.prev-next {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin-top: 120px;
+}
+.prev-next > a {
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    margin-left: auto;
     text-transform: uppercase;
     color: #000;
 }
+
 
 @media (max-width: 1500px) {
     .stupid-pointer {
