@@ -488,3 +488,9 @@ footer h2, footer h3 {
     }
 }
 
+
+span.tag {
+    color: #ccc;
+    margin: -5px 0 5px 0;
+    display: block;
+}
