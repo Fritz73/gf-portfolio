@@ -165,11 +165,15 @@
 }
 
 .paintings .container21 .p32,
-.paintings .container21 .p43,
+.paintings .container21 .p33,
 .paintings .container22 .p21,
 .paintings .container22 .p31 {
     position: relative;
     bottom: 43.75%;
+}
+.paintings .container21 .p43 {
+    position: relative;
+    bottom: calc(43.75% * 2);
 }
 
 .paintings img {
