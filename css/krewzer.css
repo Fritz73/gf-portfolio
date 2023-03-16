@@ -3,9 +3,10 @@ section {
 }
 .cover {
     align-items: center;
-    background-image: url("../assets/krewzer/cover.jpg");
+    background-image: url("../assets/krewzer/cover.png");
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 

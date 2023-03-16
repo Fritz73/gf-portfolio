@@ -50,13 +50,8 @@ function getViewport() {
 
 let viewportWidth = getViewport()[0];
 let viewportHeight = getViewport()[1];
-let path = window.location.pathname;
-let page = path.split("/").pop();
-console.log(page);
 let coverImageMoveDown;
-if (page === 'krewzer') {
-    coverImageMoveDown = -.1;
-} else if (viewportWidth / viewportHeight < 1) {
+if (viewportWidth / viewportHeight < 1) {
     coverImageMoveDown = .3;
 } else {
     coverImageMoveDown = .1;
@@ -65,9 +60,7 @@ if (page === 'krewzer') {
 setInterval(() => {
     viewportWidth = getViewport()[0];
     viewportHeight = getViewport()[1];
-    if (page === 'krewzer') {
-        coverImageMoveDown = -.1;
-    } else if (viewportWidth / viewportHeight < 1) {
+    if (viewportWidth / viewportHeight < 1) {
         coverImageMoveDown = .3;
     } else {
         coverImageMoveDown = .1;
