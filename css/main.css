@@ -489,8 +489,7 @@ footer h2, footer h3 {
 }
 
 
-span.tag {
-    color: rgba(0,0,0,.3);
-    margin: 5px;
-    display: inline-block;
+.tag {
+    color: #bbb;
+    margin: 5px 0;
 }
