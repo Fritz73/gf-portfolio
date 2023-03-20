@@ -39,7 +39,7 @@ section {
 section.preview > .download-page {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 100px;
 }
 
@@ -69,9 +69,9 @@ section.preview iframe {
     align-self: center;
 }
 section.preview > .download-page > .image-wrapper {
-    max-height: 75vh;
-    max-width: 40vw;
-    aspect-ratio: 588/1204;
+    max-height: 80vh;
+    max-width: 45vw;
+    aspect-ratio: 1/2;
 }
 
 .prev-next .next {
@@ -92,13 +92,6 @@ section.preview > .download-page > .image-wrapper {
         margin: 5px 0;
     }
 
-
-    /*section.preview > .ui-design p {*/
-    /*    display: block;*/
-    /*}*/
-    /*section.preview > .ui-design iframe {*/
-    /*    display: none;*/
-    /*}*/
 
 }
 
