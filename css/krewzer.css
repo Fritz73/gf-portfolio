@@ -36,6 +36,44 @@ section {
     margin: 80px 0;
 }
 
+section.preview > .download-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+section.preview  h3 {
+    font-size: 150%;
+}
+
+section.preview > .ui-design {
+    display: flex;
+    flex-direction: column;
+}
+
+section.preview > .ui-design div.notification {
+    align-self: center;
+    font-size: 150%;
+    display: none;
+    width: 100%;
+    background-color: #eee;
+    aspect-ratio: 16/9;
+    justify-content: center;
+    align-items: center;
+}
+
+section.preview iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    align-self: center;
+}
+section.preview > .download-page > .image-wrapper {
+    max-height: 75vh;
+    max-width: 40vw;
+    aspect-ratio: 588/1204;
+}
+
 .prev-next .next {
     display: flex;
     flex-direction: column;
@@ -53,6 +91,14 @@ section {
     .my-role > div {
         margin: 5px 0;
     }
+
+
+    /*section.preview > .ui-design p {*/
+    /*    display: block;*/
+    /*}*/
+    /*section.preview > .ui-design iframe {*/
+    /*    display: none;*/
+    /*}*/
 
 }
 
