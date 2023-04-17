@@ -328,6 +328,20 @@ a:hover {
     font-weight: 600;
 }
 
+.prev-next {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin-top: 120px;
+}
+.prev-next > a {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #000;
+}
+
+
 footer {
     font-weight: 600;
 }

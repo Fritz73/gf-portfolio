@@ -314,20 +314,6 @@ figcaption {
     background-color: #F6C848;
 }
 
-.prev-next {
-    display: flex;
-    position: relative;
-    z-index: 2;
-    margin-top: 120px;
-}
-.prev-next > a {
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    color: #000;
-}
-
-
 .orange-circle > img {
     width: 40%;
     position: absolute;

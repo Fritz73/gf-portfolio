@@ -50,22 +50,22 @@ function getViewport() {
 
 let viewportWidth = getViewport()[0];
 let viewportHeight = getViewport()[1];
-let coverImageMoveDown;
-if (viewportWidth / viewportHeight < 1) {
-    coverImageMoveDown = .3;
-} else {
-    coverImageMoveDown = .1;
-}
+let coverImageMoveDown = 0;
+// if (viewportWidth / viewportHeight < 1) {
+//     coverImageMoveDown = .3;
+// } else {
+//     coverImageMoveDown = .1;
+// }
 
-setInterval(() => {
-    viewportWidth = getViewport()[0];
-    viewportHeight = getViewport()[1];
-    if (viewportWidth / viewportHeight < 1) {
-        coverImageMoveDown = .3;
-    } else {
-        coverImageMoveDown = .1;
-    }
-}, 1000)
+// setInterval(() => {
+//     viewportWidth = getViewport()[0];
+//     viewportHeight = getViewport()[1];
+//     if (viewportWidth / viewportHeight < 1) {
+//         coverImageMoveDown = .3;
+//     } else {
+//         coverImageMoveDown = .1;
+//     }
+// }, 1000)
 
 
 const elt = (type, ...children) => {
@@ -87,7 +87,7 @@ let cover = document.querySelector('.cover');
 cover.style.backgroundPositionY = String(coverImageMoveDown * coverHeight) + 'px';
 document.addEventListener('scroll', () => {
     coverDescription.style.top = String(document.documentElement.scrollTop) + 'px';
-    cover.style.backgroundPositionY = String(-0.7 * document.documentElement.scrollTop + coverImageMoveDown * coverHeight) + 'px';
+    cover.style.backgroundPositionY = String(Math.max(-.4*coverHeight, -0.7 * document.documentElement.scrollTop + coverImageMoveDown * coverHeight)) + 'px';
 });
 
 
@@ -153,4 +153,12 @@ if (window.matchMedia('(hover: none)').matches) {
     homeLink.onmouseover = () => {
         projectDrawerAppear()
     }
+}
+
+let homepageProjects = document.querySelectorAll('main > .product');
+for (let i = 0; i < homepageProjects.length; i++) {
+    if (i%2)
+        homepageProjects[i].classList.add('text-end');
+    else
+        homepageProjects[i].classList.add('text-start');
 }
