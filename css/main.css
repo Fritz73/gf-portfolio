@@ -240,7 +240,7 @@ footer {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     column-gap: 30px;
     margin: 25px 6% 0 auto;
     color: white;
@@ -281,13 +281,13 @@ footer {
     }
 }
 
-.footer-column > h3,
-.footer-column > .all-cap {
+.footer-column h3,
+.footer-column .all-cap {
     text-transform: uppercase;
 }
 
 h2,
-.footer-column > a {
+.footer-column a {
     text-transform: capitalize;
 }
 
@@ -297,10 +297,15 @@ a {
 }
 
 .contact-me a,
-.footer-column > a {
+.footer-column a {
     display: flex;
     color: aliceblue;
     padding: 5px 0;
+}
+
+.footer-column .project-split {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
 }
 
 .prev-next > a:hover {
