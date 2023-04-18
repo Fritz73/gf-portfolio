@@ -31,6 +31,22 @@ section {
     flex-direction: column;
 }
 
+.general-content {
+    margin: 100px 0;
+}
+.general-content h3 {
+    font-size: 1.6em;
+}
+
+.insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.insights figcaption {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 .persona {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -124,5 +140,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgba(0,0,0,0);
+    transition: all .3s ease-out;
+}
+
+.graphics .color-scheme > div:hover {
     color: white;
+}
+.graphics .logo-container {
+    aspect-ratio: 1/1;
+    width: 60%;
 }
