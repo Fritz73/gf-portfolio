@@ -6,15 +6,16 @@ const enlargePicture = (event) => {
 
     if (!markerElement.pictureEnlarged) {
         let newPic = event.target.cloneNode()
-        newPic.style.width = '100%'
         newPic.style.height = '100%'
+        newPic.style.width = 'auto'
         newPic.style.objectFit = 'contain'
+        newPic.style.backgroundColor = '#ffffff'
 
         let e = elt('div', newPic)
         e.classList.add('appendElement')
 
         document.body.appendChild(e);
-        e.style.left = ((getViewport()[0] - e.offsetWidth) * 0.5).toString() + 'px'
+        // e.style.left = ((getViewport()[0] - e.offsetWidth) * 0.5).toString() + 'px'
         e.style.top = ((getViewport()[1] - e.offsetHeight) * 0.5).toString() + 'px'
         markerElement.pictureEnlarged = true;
 
@@ -28,3 +29,9 @@ document.body.onclick = () => {
         document.body.pictureEnlarged = false;
     }
 }
+
+document.querySelectorAll('img').forEach((node)=>{
+    if (node.hasAttribute('onclick')) {
+        node.style.cursor = 'pointer';
+    }
+});
