@@ -1,3 +1,7 @@
+h3 {
+    font-size: 1.6em;
+}
+
 section {
     margin-top: 110px;
 }
@@ -33,9 +37,6 @@ section {
 
 .general-content {
     margin: 100px 0;
-}
-.general-content h3 {
-    font-size: 1.6em;
 }
 
 .insights {
@@ -186,4 +187,91 @@ section {
     right: 0;
     bottom: 0;
     height: fit-content;
+}
+
+
+.final-prototype > div:not(.general-content) {
+    font-size: .7vw;
+}
+.show-proto {
+    margin: 100px 0;
+}
+.show-proto > div,
+.description-on-annoy-section {
+    position: relative;
+}
+.splash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 23.75%;
+}
+.proto-img-cont {
+    aspect-ratio: 1/2;
+    position: relative;
+}
+._splash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10%;
+}
+
+
+.show-proto .dash {
+    position: absolute;
+    font-size: 2em;
+    font-weight: lighter;
+    color: #999;
+    scale: 3.8 1;
+}
+.show-proto p {
+    position: absolute;
+    margin: 0;
+}
+.left-side p {
+    text-align: right;
+    width: 100%;
+}
+
+
+.annoy-section-with-pointer {
+    display: grid;
+    grid-gap: 5%;
+}
+.homepage {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8%;
+}
+.service, .independent,
+.photographer > .annoy-section-with-pointer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.service-details > .annoy-section-with-pointer {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 7.5%;
+}
+
+
+.appointment {
+    display: flex;
+    align-items: center;
+}
+.appointment > .image-container {
+    max-width: 50%;
+    margin-left: auto;
+}
+
+.cart > .annoy-section-with-pointer {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.chat {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+}
+
+.my-page {
+    grid-template-columns: 1fr 1fr 2fr;
 }
