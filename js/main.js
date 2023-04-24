@@ -104,24 +104,25 @@ cover.style.backgroundPositionY = String(coverImageMoveDown * coverHeight) + 'px
 // background height of the cover
 // AS it actually appears (relative to viewport)
 let backgroundHeight = 0;
-window.onload = () => {
+
+window.addEventListener('load', () => {
     let imageSrc = getComputedStyle(cover).backgroundImage
         .replace(/url\((['"])?(.*?)\1\)/gi, '$2')
         .split(',')[0];
     console.log(imageSrc);
 
-    // I just broke it up on newlines for readability
+    if (imageSrc !== 'none') {
+        let image = new Image();
+        image.src = imageSrc;
 
-    let image = new Image();
-    image.src = imageSrc;
-
-    image.onload = function () {
-        let imageRatio = image.width / image.height;
-        console.log(imageRatio);
-        backgroundHeight = viewportWidth / imageRatio;
-        console.log(viewportWidth, backgroundHeight);
-    };
-};
+        image.onload = function () {
+            let imageRatio = image.width / image.height;
+            console.log(imageRatio);
+            backgroundHeight = viewportWidth / imageRatio;
+            console.log(viewportWidth, backgroundHeight);
+        };
+    }
+});
 document.addEventListener('scroll', () => {
     coverDescription.style.top = String(document.documentElement.scrollTop) + 'px';
     if (backgroundHeight > coverHeight)
