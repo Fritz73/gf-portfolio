@@ -108,10 +108,10 @@ h3 {
 }
 
 .red {
-    color: #f50f0f;
+    color: #db0f0f;
 }
 .red-accent {
-    color: #f50f0f;
+    color: #db0f0f;
     font-weight: bold;
 }
 .left-text {
@@ -132,7 +132,7 @@ h3 {
     width: 60%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-color: #f50f0f;
+    background-color: #db0f0f;
     color: white;
     font-weight: bold;
     font-size: 18px;
