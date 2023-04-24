@@ -1,0 +1,277 @@
+h3 {
+    font-size: 1.6em;
+}
+
+section {
+    margin-top: 110px;
+}
+.cover {
+    align-items: center;
+    background-image: url("../assets/gradsnap/cover.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+
+.description-wrapper {
+    max-width: 50%;
+    z-index: 1;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.mask {
+    opacity: .5;
+}
+
+.my-role {
+    display: flex;
+    justify-content: space-between;
+}
+.my-role > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.general-content {
+    margin: 100px 0;
+}
+
+.insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.insights figcaption {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.persona {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: .5em solid #f8d90f;
+}
+.persona > div {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.persona .center {
+    justify-content: center;
+    align-items: center;
+    outline: .5em solid #3fbdf1;
+    border: .5em solid #3fbdf1;
+    margin: 0 1em;
+}
+.persona .center > .image {
+    width: 60%;
+    aspect-ratio: 1/1;
+}
+
+.persona .center div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.persona .center div > p {
+    margin: 5px 0;
+}
+
+
+.competition {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 3fr;
+    grid-gap: 2%;
+}
+.competition > div {
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 2fr;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: .7em;
+    transition: all .3s ease-out;
+}
+.competition > div > div {
+    margin: 8px 0;
+}
+.competition > .title-column {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.competition .row-title {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.competition > .columns {
+    border: 2px solid #d3dd18;
+}
+.competition > .feature-column {
+    background-color: #3fbdf1;
+    color: white;
+}
+.competition ul {
+    margin: 0;
+    padding-left: 1em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.competition .columns:hover,
+.competition .feature-column:hover {
+    scale: 1.02;
+}
+
+.graphics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8%;
+    position: relative;
+}
+
+.graphics .color-scheme {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+}
+.graphics .color-scheme > div {
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0);
+    transition: all .3s ease-out;
+}
+
+.graphics .color-scheme > div:hover {
+    color: white;
+}
+.graphics a.design-origin {
+    color: #3fbdf1;
+    transition: opacity .3s ease-out;
+}
+.graphics a.design-origin:hover {
+    opacity: .6;
+}
+.graphics a.design-origin::before {
+    content: '🡵';
+    opacity: .4;
+    margin-right: .1em;
+    color: #3fbdf1;
+}
+.graphics figure {
+    margin-block-end: 0; margin-block-start: 10%;
+    margin-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+}
+.graphics figure > img {
+    margin-top: auto;
+}
+
+.graphics .right {
+    display: flex;
+    flex-direction: column;
+}
+.graphics .logo-design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.graphics .logo-png {
+    max-width: 18%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: fit-content;
+}
+
+
+.final-prototype > div:not(.general-content) {
+    font-size: .7vw;
+}
+.show-proto {
+    margin: 100px 0;
+}
+.show-proto > div,
+.description-on-annoy-section {
+    position: relative;
+}
+.splash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 23.75%;
+}
+.proto-img-cont {
+    aspect-ratio: 1/2;
+    position: relative;
+}
+._splash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10%;
+}
+
+
+.show-proto .dash {
+    position: absolute;
+    font-size: 2em;
+    font-weight: lighter;
+    color: #999;
+    scale: 3.8 1;
+}
+.show-proto p {
+    position: absolute;
+    margin: 0;
+}
+.left-side p {
+    text-align: right;
+    width: 100%;
+}
+
+
+.annoy-section-with-pointer {
+    display: grid;
+    grid-gap: 5%;
+}
+.homepage {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8%;
+}
+.service, .independent,
+.photographer > .annoy-section-with-pointer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.service-details > .annoy-section-with-pointer {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 7.5%;
+}
+
+
+.appointment {
+    display: flex;
+    align-items: center;
+}
+.appointment > .image-container {
+    max-width: 50%;
+    margin-left: auto;
+}
+
+.cart > .annoy-section-with-pointer {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.chat {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+}
+
+.my-page {
+    grid-template-columns: 1fr 1fr 2fr;
+}

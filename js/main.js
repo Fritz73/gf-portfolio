@@ -1,24 +1,10 @@
+//--------------------------------------------------------------------------------------
+//-------------------------- General utilities -----------------------------------------
+//--------------------------------------------------------------------------------------
+
 let navBar = document.querySelector('nav');
 let navBarHeight = navBar.offsetHeight;
 let coverHeight = document.querySelector('.cover').offsetHeight;
-
-let lastScrollPosition = 0;
-document.addEventListener('scroll', () => {
-    let scrollPosition = document.documentElement.scrollTop;
-    if (scrollPosition < coverHeight - navBarHeight) {
-        navBar.style.backgroundColor = 'rgba(0,0,0,0)';
-    }
-    else {
-        navBar.style.backgroundColor = '#000';
-        if (scrollPosition > lastScrollPosition) {
-            navBar.style.top = '-200px';
-            projectDrawerDisappear();
-        } else {
-            navBar.style.top = '0';
-        }
-    }
-    lastScrollPosition = Math.max(0, scrollPosition);
-});
 
 
 function getViewport() {
@@ -48,25 +34,6 @@ function getViewport() {
     return [viewPortWidth, viewPortHeight];
 }
 
-let viewportWidth = getViewport()[0];
-let viewportHeight = getViewport()[1];
-let coverImageMoveDown;
-if (viewportWidth / viewportHeight < 1) {
-    coverImageMoveDown = .3;
-} else {
-    coverImageMoveDown = .1;
-}
-
-setInterval(() => {
-    viewportWidth = getViewport()[0];
-    viewportHeight = getViewport()[1];
-    if (viewportWidth / viewportHeight < 1) {
-        coverImageMoveDown = .3;
-    } else {
-        coverImageMoveDown = .1;
-    }
-}, 1000)
-
 
 const elt = (type, ...children) => {
     let node = document.createElement(type);
@@ -79,17 +46,95 @@ const elt = (type, ...children) => {
     return node;
 }
 
+//--------------------------------------------------------------------------------------
+//--------------------- Menubar hide on scroll -----------------------------------------
+//--------------------------------------------------------------------------------------
+let lastScrollPosition = 0;
+document.addEventListener('scroll', () => {
+    let scrollPosition = document.documentElement.scrollTop;
+    if (scrollPosition < coverHeight - navBarHeight) {
+        navBar.style.backgroundColor = 'rgba(0,0,0,0)';
+    }
+    else {
+        navBar.style.backgroundColor = '#000';
+        if (scrollPosition > lastScrollPosition) {
+            navBar.style.top = '-200px';
+            projectDrawerDisappear();
+        } else {
+            navBar.style.top = '0';
+        }
+    }
+    lastScrollPosition = Math.max(0, scrollPosition);
+});
+
+
+
+//--------------------------------------------------------------------------------------
+//--------------------- Manage cover background movement -------------------------------
+//--------------------------------------------------------------------------------------
+
+let viewportWidth = getViewport()[0];
+let viewportHeight = getViewport()[1];
+let coverImageMoveDown = 0;
+// if (viewportWidth / viewportHeight < 1) {
+//     coverImageMoveDown = .3;
+// } else {
+//     coverImageMoveDown = .1;
+// }
+
+// setInterval(() => {
+//     viewportWidth = getViewport()[0];
+//     viewportHeight = getViewport()[1];
+//     if (viewportWidth / viewportHeight < 1) {
+//         coverImageMoveDown = .3;
+//     } else {
+//         coverImageMoveDown = .1;
+//     }
+// }, 1000)
+
+
+
 let appearOnLoad = document.querySelectorAll('section:not(.cover) > div, section:not(.cover) > h2');
 
 let coverDescription = document.querySelector('.cover > .description-wrapper');
 let cover = document.querySelector('.cover');
 
 cover.style.backgroundPositionY = String(coverImageMoveDown * coverHeight) + 'px';
+
+// background height of the cover
+// AS it actually appears (relative to viewport)
+let backgroundHeight = 0;
+window.onload = () => {
+    let imageSrc = getComputedStyle(cover).backgroundImage
+        .replace(/url\((['"])?(.*?)\1\)/gi, '$2')
+        .split(',')[0];
+    console.log(imageSrc);
+
+    // I just broke it up on newlines for readability
+
+    let image = new Image();
+    image.src = imageSrc;
+
+    image.onload = function () {
+        let imageRatio = image.width / image.height;
+        console.log(imageRatio);
+        backgroundHeight = viewportWidth / imageRatio;
+        console.log(viewportWidth, backgroundHeight);
+    };
+};
 document.addEventListener('scroll', () => {
     coverDescription.style.top = String(document.documentElement.scrollTop) + 'px';
-    cover.style.backgroundPositionY = String(-0.7 * document.documentElement.scrollTop + coverImageMoveDown * coverHeight) + 'px';
+    if (backgroundHeight > coverHeight)
+        cover.style.backgroundPositionY = String(Math.max(coverHeight-backgroundHeight + 10,
+            -0.7 * document.documentElement.scrollTop + coverImageMoveDown * coverHeight)) + 'px';
 });
 
+
+
+
+//--------------------------------------------------------------------------------------
+//---------------------------- Appear on Intersection ----------------------------------
+//--------------------------------------------------------------------------------------
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -102,6 +147,11 @@ const observer = new IntersectionObserver((entries) => {
 
 appearOnLoad.forEach((el) => observer.observe(el));
 
+
+
+//--------------------------------------------------------------------------------------
+//------------------------ Menu drawer on mobile device --------------------------------
+//--------------------------------------------------------------------------------------
 
 let menuDrawer = document.querySelector('nav .menu-drawer')
 
@@ -153,4 +203,17 @@ if (window.matchMedia('(hover: none)').matches) {
     homeLink.onmouseover = () => {
         projectDrawerAppear()
     }
+}
+
+
+//--------------------------------------------------------------------------------------
+//------------------------ Auto sort projects on index ---------------------------------
+//--------------------------------------------------------------------------------------
+
+let homepageProjects = document.querySelectorAll('main > .product');
+for (let i = 0; i < homepageProjects.length; i++) {
+    if (i%2)
+        homepageProjects[i].classList.add('text-end');
+    else
+        homepageProjects[i].classList.add('text-start');
 }

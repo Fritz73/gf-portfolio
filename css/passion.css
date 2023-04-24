@@ -213,18 +213,6 @@
     }
 }
 
-.appendElement {
-    animation: append-animate .3s ease-out;
-    position: fixed;
-    width: 1000px;
-    height: 600px;
-    max-width: 80%;
-    max-height: 80%;
-    background-color: rgba(0,0,0,.7);
-    z-index: 8;
-}
-
-
 @media (max-width: 600px) {
     .travel > .container {
         display: flex;
