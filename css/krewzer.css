@@ -18,6 +18,9 @@ section {
     align-items: center;
 }
 
+h3 {
+    text-transform: capitalize;
+}
 
 .mask {
     opacity: .5;
@@ -39,7 +42,7 @@ section {
 .shadowed-box {
     border-radius: 20px;
     position: relative;
-    box-shadow: 0px 20px 20px 5px #E2E2E2;
+    box-shadow: 0 10px 30px -12px #a2abb5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,11 +64,14 @@ section {
     grid-gap: 12px;
     margin-top: 100px;
 }
+.our-team p {
+    margin: 0
+}
 .team-member-card {
     display: grid;
-    grid-template-rows: .5fr .5fr 1.5fr 1fr;
+    grid-template-rows: .3fr .3fr 1fr .5fr;
     justify-items: center;
-    padding: 60% 10% 0 10%;
+    padding: 70% 10% 10% 10%;
     transition: all .3s ease-out;
 }
 .team-member-card p,
@@ -78,10 +84,7 @@ section {
     left: 20%;
     aspect-ratio: 4/5;
     width: 60%;
-    /*noinspection CssInvalidPropertyValue*/
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1) 60% ,rgba(0,0,0,0));
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: bottom;
+
     overflow: hidden;
 }
 .portrait-cont > img {
@@ -93,7 +96,7 @@ section {
 
 .team-member-card:hover {
     translate: 0 -5px;
-    box-shadow: 0px 20px 20px 10px rgba(245, 16, 16, .4);
+    box-shadow: 0 15px 30px -12px #a2abb5;
 }
 
 .card-box {
@@ -120,6 +123,11 @@ section {
     margin-left: auto;
 }
 
+.data-box .shadowed-box {
+    position: relative;
+    padding-top: 25%;
+}
+
 .data-box .stat {
     width: 60%;
     aspect-ratio: 1/1;
@@ -131,6 +139,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
+    top: -20%;
 }
 
 
@@ -148,6 +159,9 @@ section {
     margin: 10px 0;
 }
 
+.comp-ana {
+    max-width: 60%;
+}
 .comp-ana .img-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -156,7 +170,7 @@ section {
 
 
 .market > div {
-    max-width: 60%; margin-left: auto
+    max-width: 75%; margin-left: auto
 }
 
 .solution-box {
@@ -168,6 +182,10 @@ section {
 .solution-box .shadowed-box {
     aspect-ratio: 1/1;
     justify-content: center;
+}
+.solution-box .icon-wrapper {
+    aspect-ratio: 1/1;
+    max-width: 3vw;
 }
 
 .brainstorm > .img-gallery {
@@ -181,6 +199,116 @@ section {
     margin: 80px 0;
 }
 
+
+.interact-proto {
+    display: flex;
+    align-items: end;
+    margin-left: auto;
+}
+.interact-proto p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 0;
+}
+.interact-proto .material-symbols-outlined {
+    color: #3fbdf177;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.proto-general {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    grid-gap: 3%;
+}
+
+.music > div:first-child {
+    margin-right: 15%;
+}
+.music .image-wrapper {
+    max-width: 20%;
+    margin-left: auto;
+}
+
+.download-proto .image-wrapper {
+    max-width: 20%;
+    margin-right: 15%;
+}
+
+.photo-w-investors {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    "i1 i2 i3"
+    "i1 i4 i5";
+    margin-top: 50px;
+}
+.photo-w-investors .image-wrapper {
+    overflow: hidden;
+}
+.photo-w-investors img {
+    object-fit: cover;
+}
+
+.market-ana .image-wrapper {
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.one-two-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#reaching-plan {
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.make-money > div:first-child {
+    margin-right: 10%;
+    width: 40%;
+}
+.make-money > div:nth-child(2) {
+    display: grid;
+    margin-left: auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    ".  b1 b1 b2 b2 . "
+    "b3 b3 b4 b4 b5 b5";
+    grid-gap: 5%;
+}
+
+.make-money .shadowed-box {
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5%;
+}
+.red-box {
+    background-color: #D0342F;
+    color: white;
+}
+.emph-num {
+    font-size: 150%;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 5%;
+}
+.red-box .emph-num {
+    border-top: 1px solid white;
+}
+
+.make-money p {
+    margin: 10px 0;
+}
+
+.the-ask .image-wrapper {
+    padding: 0 10%;
+}
 
 .prev-next .next {
     display: flex;
