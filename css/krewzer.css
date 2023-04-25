@@ -240,9 +240,7 @@ h3 {
 .photo-w-investors {
     display: grid;
     grid-gap: 10px;
-    grid-template-areas:
-    "i1 i2 i3"
-    "i1 i4 i5";
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 50px;
 }
 .photo-w-investors .image-wrapper {
