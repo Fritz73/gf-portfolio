@@ -6,9 +6,9 @@ const enlargePicture = (event) => {
 
     if (!markerElement.pictureEnlarged) {
         let newPic = event.target.cloneNode()
-        newPic.style.height = '100%'
-        newPic.style.width = 'auto'
         newPic.style.objectFit = 'contain'
+        newPic.style.width = 'fit-content'
+        newPic.style.maxWidth = '90%'
         newPic.style.backgroundColor = '#ffffff'
 
         let e = elt('div', newPic)

@@ -204,6 +204,10 @@ svg {
     flex-direction: row-reverse;
 }
 
+#main-gradsnap-img {
+    max-width: 35%;
+}
+
 .text-start > .product-wrapper {
     flex-direction: row;
 }
