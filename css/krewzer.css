@@ -152,6 +152,7 @@ h3 {
 }
 .problem-box h4 {
     width: 80%;
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(245, 15, 15, 0.4);
 }
 .problem-box .material-symbols-outlined {
@@ -250,6 +251,12 @@ h3 {
     object-fit: cover;
 }
 
+.market-ana > div:first-child,
+.make-money > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .market-ana .image-wrapper {
     max-width: 80%;
     margin-left: auto;
