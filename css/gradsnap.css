@@ -178,21 +178,10 @@ section {
     display: flex;
     flex-direction: column;
 }
-.graphics .logo-design {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.graphics .logo-png {
-    max-width: 18%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: fit-content;
-}
 
 
 .final-prototype > div:not(.general-content) {
-    font-size: .7vw;
+    font-size: 16px;
 }
 .show-proto {
     margin: 100px 0;

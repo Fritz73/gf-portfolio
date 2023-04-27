@@ -149,6 +149,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     margin-left: auto;
     font-size: 16px;
+    padding-bottom: 30px;
 }
 .problem-box h4 {
     width: 80%;
@@ -158,6 +159,18 @@ h3 {
 .problem-box .material-symbols-outlined {
     scale: 1.5;
     margin: 10px 0;
+}
+.problem-box .shadowed-box:after {
+    position: absolute;
+    top: 102%;
+    font-size: 11px;
+}
+#problem-box-1:after {
+    content: "\" Spotify exploit artists\"";
+}
+#problem-box-2:after {
+    content: "\"Today with streaming platforms, we stay pretty much locked into the sounds we've heard recently\"";
+
 }
 
 .comp-ana {
