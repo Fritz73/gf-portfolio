@@ -206,15 +206,3 @@ if (window.matchMedia('(hover: none)').matches) {
     }
 }
 
-
-//--------------------------------------------------------------------------------------
-//------------------------ Auto sort projects on index ---------------------------------
-//--------------------------------------------------------------------------------------
-
-let homepageProjects = document.querySelectorAll('main > .product');
-for (let i = 0; i < homepageProjects.length; i++) {
-    if (i%2)
-        homepageProjects[i].classList.add('text-end');
-    else
-        homepageProjects[i].classList.add('text-start');
-}
