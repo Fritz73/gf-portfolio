@@ -329,6 +329,10 @@ h3 {
     padding: 0 10%;
 }
 
+.out-link {
+    color: black;
+    border-bottom: 1px solid black;
+}
 .prev-next .next {
     display: flex;
     flex-direction: column;
